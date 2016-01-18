@@ -44,7 +44,7 @@ class CI_Cart {
 	{
 		// Set the super object to a local variable for use later
 		$this->CI =& get_instance();
-                session_start();
+                //session_start();
                 
 		// Grab the shopping cart array from the session table, if it exists
 		if (isset($_SESSION['cart_contents']))
