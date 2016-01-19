@@ -17,7 +17,20 @@
     <div class="row search-bar">
 <!--            <img src="https://b.zmtcdn.com/images/homescreens/34-n.jpg">-->
         <form class="form-wrapper cf">
-            <button class="col-md-2 vb-search-btn test" type="submit" style="float: left">Search</button>
+<!--            <button class="col-md-2 vb-search-btn test" type="submit" style="float: left">Search</button>-->
+
+            <div class="col-md-2 dropdown toggle" style="float: left">
+                <input id="t1" type="checkbox">
+                <label for="t1">Toggle Menu</label>
+                <ul>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Text</a></li>
+                    <li><a href="#">Page</a></li>
+                    <li><a href="#">Thing</a></li>
+                </ul>
+            </div>
+
             <input class="col-md-8" type="text" placeholder="Search here..." required>
             <button class="col-md-2 vb-search-btn" type="submit">Search</button>
         </form>
@@ -96,3 +109,14 @@
 
 </div>
 <!-- /.container -->
+
+<script>
+    $(document).click(function(event) {
+        if(
+            $('.toggle > input').is(':checked') &&
+            !$(event.target).parents('.toggle').is('.toggle')
+        ) {
+            $('.toggle > input').prop('checked', false);
+        }
+    })
+</script>
