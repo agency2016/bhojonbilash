@@ -1,0 +1,285 @@
+@import "variables";
+@import "buttons";
+@import "forms";
+@import "typo";
+
+
+
+
+input[type=checkbox] {
+  visibility: hidden;
+}
+
+
+label.checkbox {
+  cursor: pointer;
+  text-indent: 35px;
+  overflow: visible;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+label.checkbox:before {
+  background: @adbd-color2;
+  content:'';
+  position: absolute;
+  top:2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+label.checkbox:after {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  width: 0.8em;
+  height: 0.5em;
+  background: transparent;
+  top: 7.5px;
+  left: 4.5px;
+  border: 3px solid #ffffff;
+  border-top: none;
+  border-right: none;
+
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
+.custom-dropdown--small {
+  font-size: .7em;
+}
+
+.custom-dropdown__select{
+  font-size: inherit; /* inherit size from .custom-dropdown */
+  padding: .5em; /* add some space*/
+  margin: 0; /* remove default margins */
+}
+
+.custom-dropdown__select--emerald {
+  background-color: #20b390;
+  color: #fff;
+}
+.custom-dropdown__select {
+  padding-right: 2.5em; /* accommodate with the pseudo elements for the dropdown arrow */
+  border: 0;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.custom-dropdown::before,
+.custom-dropdown::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.custom-dropdown::after { /*  Custom dropdown arrow */
+  content: "\25BC";
+  height: 1em;
+  font-size: .625em;
+  line-height: 1;
+  right: 1.2em;
+  top: 50%; margin-top: -.5em;
+}
+
+.custom-dropdown::before { /*  Custom dropdown arrow cover */
+  width: 2em;
+  right: 0; top: 0; bottom: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+/*custom input box*/
+
+
+
+/**
+ * Checkbox design
+ */
+.checkboxadbd input[type="checkbox"]{
+  display: none;
+}
+.checkboxadbd{
+  width: 20px;
+  height: 20px;
+  background: #ddd;
+  margin: 20px 90px;
+
+  border-radius: 10%;
+  position: relative;
+  -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+}
+/**
+ * Create the checkbox button
+ */
+.checkboxadbd label {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 1;
+
+  background: #333;
+
+  -webkit-box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
+  -moz-box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
+  box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
+}
+.checkboxadbd input[type=checkbox]:checked + label {
+  background: @adbd-color1;
+}
+/**
+ * Checkbox design
+ */
+.radioadbd input[type="radio"]{
+  display: none;
+}
+.radioadbd{
+  width: 20px;
+  height: 20px;
+  background: #ddd;
+  margin: 20px 90px;
+
+  border-radius: 100%;
+  position: relative;
+  -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+}
+/**
+ * Create the checkbox button
+ */
+.radioadbd label {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 100px;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 1;
+  background: #333;
+  -webkit-box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
+  -moz-box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
+  box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
+}
+.radioadbd input[type=radio]:checked + label {
+  background:@adbd-color1 ;
+}
+.selectadbd select {
+  background: transparent;
+  width: 250px;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1;
+  border: 1px solid  #ddd;
+  border-radius: 0;
+  height: 34px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(../../images/arrow483.png) no-repeat 98%;
+}
+
+/*common-wrapper*/
+.adbdshare_wrapper{
+  min-height: 500px!important;
+  margin-top: 100px;
+}
+
+/*end of common style*/
+
+
+//BTN
+
+@color1: #426FC5;
+@color2: #00897b;
+@color3: #f6774f;
+@color4: #e94043;
+@color5: #E81D62;
+
+.btn.color-1 {
+  background-color: @color1;
+}
+.btn.color-2 {
+  background-color: @color2;
+}
+.btn.color-3 {
+  background-color: @color3;
+}
+.btn.color-4 {
+  background-color: @color4;
+}
+
+.btn.color-5 {
+  background-color: @color5;
+}
+
+
+
+
+.btn-border.color-1 {
+  background-color: transparent;
+  border: 2px solid @color1;
+  color: @color1;
+}
+.btn-border.color-2 {
+  background-color: transparent;
+  border: 2px solid @color2;
+  color: @color2;
+}
+.btn-border.color-3 {
+  background-color: transparent;
+  border: 2px solid @color3;
+  color: @color3;
+}
+.btn-border.color-4 {
+  background-color: transparent;
+  border: 2px solid @color4;
+  color: @color4;
+}
+
+.btn-border.color-5 {
+  background-color: transparent;
+  border: 2px solid @color5;
+  color: @color5;
+}
+
+.btn-round {
+  border-radius: 10em;
+}
+
+//BTN

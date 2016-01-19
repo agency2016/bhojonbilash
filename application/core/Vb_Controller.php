@@ -6,8 +6,8 @@ if (!defined('BASEPATH'))
 class Vb_Controller extends CI_Controller {
 
     public $default_load_list = array(
-        'vb_css' => array('jquery-ui', 'sweetalert', 'vb', 'vb_front'),
-        'vb_js' => array('jquery-ui.min', 'jquery.validate', 'jQuerySimpleCounter', 'bootstrap-alert', 'sweetalert.min', 'custom'),
+        'vb_css' => array('bootstrap.min', 'sweetalert', 'bhojonbilash', 'adbd_common'),
+        'vb_js' => array('jquery','bootstrap.min'),
         'vb_font' => array('Raleway', 'Dancing Script', 'Georgia', 'Times'),
         'vb_css_footer' => array(),
         'vb_js_footer' => array()

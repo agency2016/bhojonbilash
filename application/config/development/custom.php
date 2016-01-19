@@ -1,9 +1,9 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-$config['site_title'] = 'Drug BD';
+$config['site_title'] = 'Bhojonbilash';
 $config['site_description'] = 'Description';
 $config['site_author'] = 'Agency Delta';
-$config['site_keywords'] = 'Drugbd prescription';
+$config['site_keywords'] = 'Bhojonbilash prescription';
 
 $config['googleplus']['application_name'] = 'drugbd';
 $config['googleplus']['client_id']        = '767006765182-0rcrii6bu4cjtfrmcsb4e65keuj6ot8f.apps.googleusercontent.com';
