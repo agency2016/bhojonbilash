@@ -1,15 +1,16 @@
 <?php
 
-class Home extends CI_Controller {
- 
+class Home extends Vb_Controller {
+
     public function __construct() {
-       
+
         parent::__construct();
-       
     }
+
     public function index() {
-       
-        $this->load->view('home');
+        $data = array();
+        $css_js = array();
+        $this->_render('home/home', $data, $css_js);
     }
 
 }
