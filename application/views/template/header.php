@@ -33,7 +33,7 @@
         transition: all 0.1s linear;
     }
     .lb-header .active{
-        color: #029f5b;
+        color: #CB202F;
         font-size: 18px;
     }
     .social-login{
@@ -195,6 +195,7 @@
                         <i class="fa fa-facebook fa-lg"></i>
                         Login in with facebook
                     </a>
+                    <br>
                     <a href="#" class="text-center">
                         <i class="fa fa-google-plus fa-lg"></i>
                         log in with Google
