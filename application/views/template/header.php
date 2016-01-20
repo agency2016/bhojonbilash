@@ -46,8 +46,8 @@
     }
     .social-login a{
         position:relative;
-        float: left;
-        width:calc(40% - 8px);
+        /*float: left;*/
+        width: calc(65% - 22px);
         text-decoration: none;
         color: #fff;
         border: 1px solid rgba(0,0,0,0.05);
@@ -57,6 +57,7 @@
         text-transform: uppercase;
         margin: 0 3%;
         text-align:center;
+        margin-bottom: 10px;
     }
     .social-login a i{
         position: relative;
@@ -97,7 +98,7 @@
         transition:all 0.1s linear;
     }
     .u-form-group input:focus{
-        border-color: #358efb;
+        border-color: #CB202F;
     }
     .u-form-group button{
         width:50%;
@@ -192,11 +193,11 @@
 
                 <div class="social-login">
 
-                    <a href="#">
+                    <a href="#" class="text-center">
                         <i class="fa fa-facebook fa-lg"></i>
                         Login in with facebook
                     </a>
-                    <a href="#">
+                    <a href="#" class="text-center">
                         <i class="fa fa-google-plus fa-lg"></i>
                         log in with Google
                     </a>
