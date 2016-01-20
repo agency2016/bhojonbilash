@@ -92,102 +92,65 @@ a:hover {
   color: #9f1925;
   text-decoration: none;
 }
-input[type=checkbox] {
-  visibility: hidden;
-}
-label.checkbox {
+.adbd-checkbox {
   cursor: pointer;
-  text-indent: 35px;
-  overflow: visible;
-  display: inline-block;
-  position: relative;
-  margin-bottom: 15px;
-}
-label.checkbox:before {
-  background: #e81d62;
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 0;
-  width: 20px;
   height: 20px;
-  border-radius: 100%;
-}
-label.checkbox:after {
-  opacity: 0;
-  content: '';
+  margin: 4px 0 0;
   position: absolute;
-  width: 0.8em;
-  height: 0.5em;
-  background: transparent;
-  top: 7.5px;
-  left: 4.5px;
-  border: 3px solid #ffffff;
-  border-top: none;
-  border-right: none;
+  opacity: 0;
+  width: 20px;
+  z-index: 2;
+}
+.adbd-checkbox + .ck-span {
+  background: #FFF;
+  border-radius: 0px;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  height: 20px;
+  border: 1px solid #cb202f;
+  margin: 4px 0 0;
+  position: relative;
+  width: 20px;
+  transition: all .2s ease;
+}
+.adbd-checkbox + .ck-span::before,
+.adbd-checkbox + .ck-span::after {
+  background: #ffffff;
+  content: '';
+  display: block;
+  position: absolute;
+  width: 4px;
+  transition: all .2s ease;
+}
+.adbd-checkbox + .ck-span::before {
+  height: 11px;
+  left: 3px;
+  top: 6px;
   -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-input[type=checkbox]:checked + label:after {
-  opacity: 1;
+.adbd-checkbox + .ck-span::after {
+  height: 15px;
+  right: 4px;
+  top: 2px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
-.custom-dropdown--small {
-  font-size: .7em;
+.adbd-checkbox:checked + .ck-span {
+  background: #cb202f;
 }
-.custom-dropdown__select {
-  font-size: inherit;
-  /* inherit size from .custom-dropdown */
-  padding: .5em;
-  /* add some space*/
-  margin: 0;
-  /* remove default margins */
+.adbd-checkbox:checked + .ck-span::before {
+  height: 11px;
+  left: 3px;
+  top: 6px;
+  -webkit-transform: rotate(-47deg);
+  transform: rotate(-47deg);
 }
-.custom-dropdown__select--emerald {
-  background-color: #20b390;
-  color: #fff;
+.adbd-checkbox:checked + .ck-span::after {
+  height: 15px;
+  right: 4px;
+  top: 2px;
 }
-.custom-dropdown__select {
-  padding-right: 2.5em;
-  /* accommodate with the pseudo elements for the dropdown arrow */
-  border: 0;
-  border-radius: 3px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-.custom-dropdown::before,
-.custom-dropdown::after {
-  content: "";
-  position: absolute;
-  pointer-events: none;
-}
-.custom-dropdown::after {
-  /*  Custom dropdown arrow */
-  content: "\25BC";
-  height: 1em;
-  font-size: .625em;
-  line-height: 1;
-  right: 1.2em;
-  top: 50%;
-  margin-top: -0.5em;
-}
-.custom-dropdown::before {
-  /*  Custom dropdown arrow cover */
-  width: 2em;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  border-radius: 0 3px 3px 0;
-}
-.custom-dropdown {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-}
-/*custom input box*/
 /**
  * Checkbox design
  */
@@ -205,35 +168,6 @@ input[type=checkbox]:checked + label:after {
   -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
 }
-/**
- * Create the checkbox button
- */
-.checkboxadbd label {
-  display: block;
-  width: 14px;
-  height: 14px;
-  border-radius: 2px;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  transition: all .5s ease;
-  cursor: pointer;
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  z-index: 1;
-  background: #333;
-  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.5);
-}
-.checkboxadbd input[type=checkbox]:checked + label {
-  background: #cb202f;
-}
-/**
- * Checkbox design
- */
 .radioadbd input[type="radio"] {
   display: none;
 }
@@ -293,52 +227,7 @@ input[type=checkbox]:checked + label:after {
   margin-top: 100px;
 }
 /*end of common style*/
-.btn.color-1 {
-  background-color: #426fc5;
-}
-.btn.color-2 {
-  background-color: #00897b;
-}
-.btn.color-3 {
-  background-color: #f6774f;
-}
-.btn.color-4 {
-  background-color: #e94043;
-}
-.btn.color-5 {
-  background-color: #e81d62;
-}
-.btn-border.color-1 {
-  background-color: transparent;
-  border: 2px solid #426fc5;
-  color: #426fc5;
-}
-.btn-border.color-2 {
-  background-color: transparent;
-  border: 2px solid #00897b;
-  color: #00897b;
-}
-.btn-border.color-3 {
-  background-color: transparent;
-  border: 2px solid #f6774f;
-  color: #f6774f;
-}
-.btn-border.color-4 {
-  background-color: transparent;
-  border: 2px solid #e94043;
-  color: #e94043;
-}
-.btn-border.color-5 {
-  background-color: transparent;
-  border: 2px solid #e81d62;
-  color: #e81d62;
-}
-.btn-round {
-  border-radius: 10em;
-}
-body {
-  /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-}
+/*START NAVBAR*/
 .vb-navbar {
   background-color: #fafafa;
   border-bottom-color: #fafafa;
@@ -370,6 +259,7 @@ body {
 .navbar-right {
   margin-right: 0px;
 }
+/*END NAVBAR*/
 /* START LANGUAGE BTN*/
 #sliderLabel {
   cursor: pointer;
@@ -674,6 +564,7 @@ a.list-group-item:focus {
   padding: 9px;
   color: #333;
 }
+/*START FOOTER*/
 footer {
   margin: 50px 0;
 }

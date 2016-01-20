@@ -58,9 +58,21 @@
         </div>
 
         <div class="col-md-8">
+
+<!--                <input type="checkbox" class="adbd-checkbox" />-->
+<!--                <span class="ck-span"></span>-->
+<!---->
+<!---->
+<!--                <input type="radio" value="None" id="male" name="gender" checked/>-->
+<!--                <label for="male" class="radio" chec>Male</label>-->
+<!---->
+<!--                <input type="radio" value="None" id="female" name="gender" />-->
+<!--                <label for="female" class="radio">Female</label>-->
+
+
             <div class="row">
                 <?php
-                for($i=1;$i<=10;$i++){
+                for($i=1;$i<=6;$i++){
                 ?>
                 <div class="col-sm-4 col-lg-4 col-md-4">
                     <div class="thumbnail">
