@@ -136,7 +136,7 @@ body {
   font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
   color: #fff;
   text-transform: uppercase;
-  background: #d83c3c;
+  background: @adbd-color1;
   -moz-border-radius: 0 3px 3px 0;
   -webkit-border-radius: 0 3px 3px 0;
   //border-radius: 0 3px 3px 0;
@@ -144,12 +144,12 @@ body {
 }
 
 .form-wrapper .vb-search-btn:hover{
-  background: #e54040;
+  background: lighten(@adbd-color1,5%);
 }
 
 .form-wrapper .vb-search-btn:active,
 .form-wrapper .vb-search-btn:focus{
-  background: #c42f2f;
+  background: lighten(@adbd-color1,5%);
 }
 
 .form-wrapper .vb-search-btn:before {
@@ -224,6 +224,7 @@ body {
 
 .dropdown a:hover, .dropdown.toggle > label:hover{
   background: lighten(@adbd-color1,5%);
+  color: #FFF;
 }
 
 .dropdown li {
@@ -235,33 +236,33 @@ body {
   transition-delay: 300ms;
 }
 
-.dropdown li:first-child a::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid @adbd-color1;
-  margin: -10px 0 0 30px;
-}
+//.dropdown li:first-child a::before {
+//  content: "";
+//  display: block;
+//  position: absolute;
+//  width: 0;
+//  height: 0;
+//  border-left: 10px solid transparent;
+//  border-right: 10px solid transparent;
+//  border-bottom: 10px solid @adbd-color1;
+//  margin: -10px 0 0 30px;
+//}
 //.dropdown a:hover, .dropdown.toggle > label:hover, .dropdown.toggle > input:checked ~ label {
 //  background-color: #EEE;
 //  color: #fff;
 //}
-.dropdown > a:hover::after, .dropdown.toggle > label:hover::after, .dropdown.toggle > input:checked ~ label::after {
-  border-top-color: #FFF;
-}
-.dropdown li:first-child a:hover::before {
-  border-bottom-color: #EEE;
-}
+//.dropdown > a:hover::after, .dropdown.toggle > label:hover::after, .dropdown.toggle > input:checked ~ label::after {
+//  border-top-color: #FFF;
+//}
+//.dropdown li:first-child a:hover::before {
+//  border-bottom-color: #EEE;
+//}
 .dropdown.hover:hover li, .dropdown.toggle > input:checked ~ ul li {
   height: 40px;
 }
-.dropdown.hover:hover li:first-child, .dropdown.toggle > input:checked ~ ul li:first-child {
-  padding-top: 15px;
-}
+//.dropdown.hover:hover li:first-child, .dropdown.toggle > input:checked ~ ul li:first-child {
+//  padding-top: 15px;
+//}
 
 .form-wrapper .vb-search-location {
   overflow: visible;
