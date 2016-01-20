@@ -75,8 +75,6 @@ body {
 #sliderOn, #sliderOff {
   color: white;
   display: block;
-  font-family: verdana, arial, sans-serif;
-  font-size: 14px;
   //font-weight: bold;
   line-height: 30px;
   position: absolute;
@@ -143,13 +141,12 @@ body {
 .form-wrapper input {
   //width: 330px;
   //height: 20px;
-  padding: 10px 5px;
+  padding: 10px 10px;
   float: left;
-  font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
   border: 1px solid #eee;
   background: #eee;
-  -moz-border-radius: 3px 0 0 3px;
-  -webkit-border-radius: 3px 0 0 3px;
+  //-moz-border-radius: 3px 0 0 3px;
+  //-webkit-border-radius: 3px 0 0 3px;
   //border-radius: 3px 0 0 3px;
 }
 
@@ -187,14 +184,15 @@ body {
   border: 0;
   padding: 0;
   cursor: pointer;
-  height: 41px;
+  height: 42px;
   //width: 110px;
-  font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+  font: bold @adbd-font-size/40px;
   color: #fff;
   text-transform: uppercase;
   background: @adbd-color1;
   //-moz-border-radius: 0 3px 3px 0;
   //-webkit-border-radius: 0 3px 3px 0;
+
   //border-radius: 0 3px 3px 0;
   text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
 }
@@ -208,22 +206,30 @@ body {
   background: lighten(@adbd-color1,5%);
 }
 
-.form-wrapper .vb-search-btn:before {
-  content: '';
-  position: absolute;
-  border-width: 8px 8px 8px 0;
-  border-style: solid solid solid none;
-  border-color: transparent @adbd-color1 transparent;
-  top: 12px;
-  left: -6px;
+@media (max-width: 767px) {
+  .search-bar-space{
+    margin-bottom: 10px;
+  }
 }
 
-.form-wrapper .vb-search-btn:hover:before{
-  border-right-color: @adbd-color1;
-}
+@media(min-width:768px){
+  .form-wrapper .vb-search-btn:before {
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent @adbd-color1 transparent;
+    top: 12px;
+    left: -6px;
+  }
 
-.form-wrapper .vb-search-btn:focus:before{
-  border-right-color: @adbd-color1;
+  .form-wrapper .vb-search-btn:hover:before{
+    border-right-color: @adbd-color1;
+  }
+
+  .form-wrapper .vb-search-btn:focus:before{
+    border-right-color: @adbd-color1;
+  }
 }
 
 .form-wrapper .vb-search-btn::-moz-focus-inner {
@@ -250,7 +256,7 @@ body {
 .dropdown > a::after, .dropdown.toggle > label::after {
   content: "";
   float: right;
-  margin: 15px 15px 0 0;
+  margin: 16px 10px 0 0;
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
@@ -266,12 +272,13 @@ body {
   width: 100%;
   box-shadow: 0 6px 5px -5px rgba(0,0,0,0.3);
   overflow: hidden;
+  z-index: 1;
 }
 .dropdown a, .dropdown.toggle > label {
   display: block;
   padding: 0 0 0 10px;
   text-decoration: none;
-  line-height: 41px;
+  line-height: 42px;
   //font-size: 13px;
   text-transform: uppercase;
   font-weight: bold;
@@ -328,8 +335,8 @@ body {
   border: 0;
   padding: 0;
   cursor: pointer;
-  height: 41px;
-  font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+  height: 42px;
+  font: bold @adbd-font-size/40px;
   color: #fff;
   text-transform: uppercase;
   background: @adbd-color1;
