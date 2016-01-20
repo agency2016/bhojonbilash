@@ -7,7 +7,7 @@ class Vb_Controller extends CI_Controller {
 
     public $default_load_list = array(
         'vb_css' => array('bootstrap.min', 'sweetalert', 'bhojonbilash', 'adbd_common'),
-        'vb_js' => array('jquery','bootstrap.min'),
+        'vb_js' => array('jquery','bootstrap.min','angular.min','bhojonbilash'),
         'vb_font' => array('Raleway', 'Dancing Script', 'Georgia', 'Times'),
         'vb_css_footer' => array(),
         'vb_js_footer' => array()
@@ -138,13 +138,13 @@ class Vb_Controller extends CI_Controller {
             $this->template_data['vb_header'] = $this->load->view('template/header', array_merge($this->template_data, $page_data), true);
             $this->template_data['vb_footer'] = $this->load->view('template/footer', array_merge($this->template_data, $page_data), true);
         }
-        if (!empty($this->vb_login_user) && ($this->vb_login_user['vb_user_role'] == 3 || ($this->vb_login_user['vb_user_role'] == 2 && array_key_exists('permit_volunteer', $page_data) && $page_data['permit_volunteer'] === 1))) {
+        //if (!empty($this->vb_login_user) && ($this->vb_login_user['vb_user_role'] == 3 || ($this->vb_login_user['vb_user_role'] == 2 && array_key_exists('permit_volunteer', $page_data) && $page_data['permit_volunteer'] === 1))) {
             $this->template_data['vb_page_content'] = $this->load->view('admin/' . $view, $page_data, true);
             $this->template_data['vb_main_body'] = $this->load->view('template/main_body', $this->template_data, true);
             $this->load->view('template/skeleton', array_merge($this->template_data, $page_data));
-        } else {
-            redirect(base_url('home/'));
-        }
+//        } else {
+//            redirect(base_url('home/'));
+//        }
     }
 
     /**

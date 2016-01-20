@@ -3,12 +3,12 @@
 $config['site_title'] = 'Bhojonbilash';
 $config['site_description'] = 'Description';
 $config['site_author'] = 'Agency Delta';
-$config['site_keywords'] = 'Bhojonbilash prescription';
+$config['site_keywords'] = 'Bhojonbilash drescription';
 
-$config['googleplus']['application_name'] = 'drugbd';
+$config['googleplus']['application_name'] = 'bhojonbilash';
 $config['googleplus']['client_id']        = '767006765182-0rcrii6bu4cjtfrmcsb4e65keuj6ot8f.apps.googleusercontent.com';
 $config['googleplus']['client_secret']    = '4MFCufi_hx5jeupy60yjqtGu';
-$config['googleplus']['redirect_uri']     = 'http://localhost/agencydelta/drugbd';
+$config['googleplus']['redirect_uri']     = 'http://localhost/agencydelta/bhojonbilash';
 $config['googleplus']['api_key']          = 'AIzaSyC0AKCcp7DiBbUNPv2nwZrzF48ZyAtApBU';
 $config['googleplus']['scopes']           = array('email');
 
