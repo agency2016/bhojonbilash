@@ -229,7 +229,7 @@
                         <input type="password" placeholder="Confirm Password"/>
                     </div>
                     <div class="u-form-group">
-                        <button>Sign Up</button>
+                        <button class="btn adbd-btn-1">Sign Up</button>
                     </div>
                 </form>
                 <form class="forgotPassword" id="forgot_password">
@@ -237,7 +237,7 @@
                         <input type="email" placeholder="Email"/>
                     </div>
                     <div class="u-form-group">
-                        <button>Log in</button>
+                        <button class="btn adbd-btn-1">Submit</button>
                     </div>
                 </form>
                 
