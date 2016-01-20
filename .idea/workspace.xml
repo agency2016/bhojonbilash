@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="455a3b47-4a7e-4f3f-ad95-faf8806365c4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/adbd_common.css" afterPath="$PROJECT_DIR$/resources/css/adbd_common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/LESS/adbd_common.less" afterPath="$PROJECT_DIR$/resources/css/LESS/adbd_common.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/bhojonbilash.css" afterPath="$PROJECT_DIR$/resources/css/bhojonbilash.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/LESS/bhojonbilash.less" afterPath="$PROJECT_DIR$/resources/css/LESS/bhojonbilash.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/frontend/home/home.php" afterPath="$PROJECT_DIR$/application/views/frontend/home/home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/vb_admin.css" afterPath="$PROJECT_DIR$/resources/css/vb_admin.css" />
     </list>
     <ignored path="bhojonbilash.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/frontend/home/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.51897323">
+            <state vertical-scroll-proportion="-19.375">
               <caret line="67" column="7" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -51,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bhojonbilash.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="bhojonbilash.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/css/LESS/bhojonbilash.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="5.019608">
-              <caret line="65" column="33" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.79286534">
+              <caret line="430" column="38" selection-start-line="430" selection-start-column="38" selection-end-line="430" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -90,9 +88,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/application/views/template/header.php" />
-        <option value="$PROJECT_DIR$/resources/css/LESS/bhojonbilash.less" />
         <option value="$PROJECT_DIR$/resources/css/LESS/adbd_common.less" />
         <option value="$PROJECT_DIR$/application/views/frontend/home/home.php" />
+        <option value="$PROJECT_DIR$/resources/css/LESS/bhojonbilash.less" />
       </list>
     </option>
   </component>
@@ -454,14 +452,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/LESS/bhojonbilash.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.019608">
-          <caret line="65" column="33" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/css/LESS/adbd_common.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.083333">
@@ -472,12 +462,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/frontend/home/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51897323">
+        <state vertical-scroll-proportion="-19.375">
           <caret line="67" column="7" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
           <folding>
             <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/LESS/bhojonbilash.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.79286534">
+          <caret line="430" column="38" selection-start-line="430" selection-start-column="38" selection-end-line="430" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -564,6 +564,9 @@ a.list-group-item:focus {
   padding: 9px;
   color: #333;
 }
+.well {
+  border-radius: 0;
+}
 /*START FOOTER*/
 footer {
   margin: 50px 0;
