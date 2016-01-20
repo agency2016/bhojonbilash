@@ -83,11 +83,8 @@ public function all_user() {
 				'fname' => $data['fname'],
 				'email' => $data['email'],
 				'password' => '123',
-				'lname' => 'Last Name',
-				'phone' => '123456',
-				'gender' => 1,
-				'is_active' => 1,
-				'type' => 1
+				'lname' => 'Last Name'
+				
 			);
 			//var_dump($data);
 		}

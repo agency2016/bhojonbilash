@@ -54,13 +54,14 @@ userApp.controller('userCtrl', function ($scope, $http,$location) {
                     $http({
                             method: 'POST',
                             dataType: 'json',
-                            url: newlocation+'admin_user/all_user',
+                            url: newlocation+'admin_user/update_user',
                             data: updateTask, //forms user object
                             headers: {'Content-Type': 'application/json'}}).success(function(data){
-                            $scope.refresh();
                             $scope.ngFname = '';
                             $scope.ngEmail = '';
-                            $scope.cancel('#useraddModal');
+                            $scope.addedit= false;
+                            $scope.list= true;
+                            $scope.refresh();
                     }).error(function(data){
                             alert(data.error);
                     });
@@ -68,7 +69,8 @@ userApp.controller('userCtrl', function ($scope, $http,$location) {
 		
 	}
 	
-	$scope.deleteTask = function(task){
+	$scope.deleteUser = function(task){
+               
 		var updateTask = {user_id:task.user_id};
                     $http({
                             method: 'POST',
@@ -83,14 +85,14 @@ userApp.controller('userCtrl', function ($scope, $http,$location) {
                     });
 	}
 	
-	$scope.updateTask = function(user){
+	$scope.updateUser = function(user){
                 
-		var element = angular.element('#useraddModal');
+		$scope.addedit= true;
+                $scope.list= false;
                 $scope.ngFname = user.fname;
                 $scope.ngEmail = user.email;
                 $scope.ngID = user.user_id;
-                element.modal('show');
-		//$scope.refresh();
+                
 	}
 	
 });

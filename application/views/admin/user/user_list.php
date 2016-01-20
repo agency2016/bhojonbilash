@@ -13,7 +13,7 @@
                 <h3 data-ng-show="users.length != 0">{{ users.length}} User Found</h3>
             </div>
 
-            <button type="button" class="btn btn-info btn-lg" ng-click="addUser()"><span class="glyphicon glyphicon-plus"></span></button>
+            <button type="button" class="btn btn-primary btn-lg" ng-click="addUser()"><span class="glyphicon glyphicon-plus"></span></button>
 
             <table class="table table-hover" data-ng-show="users.length > 0">
                 <thead>
@@ -32,8 +32,8 @@
                     <td>{{ users[$index].fname }}</td>
                     <td>{{ users[$index].lname }}</td>
                     <td>{{ users[$index].email }}</td>
-                   <td style="text-align:center"><a class="btn adbd-btn-2" ng-click="updateUser(users[$index])">Edit</a></td>
-                    <td style="text-align:center"><a class="btn adbd-btn-1" ng-click="deleteUser(users[$index])">Delete</a></td>
+                   <td style="text-align:center"><a class="btn" ng-click="updateUser(users[$index])">Edit</a></td>
+                    <td style="text-align:center"><a class="btn" ng-click="deleteUser(users[$index])" ng-confirm-click="Are you sure?">Delete</a></td>
                 </tr>
                 </tbody>
             </table>
