@@ -52,8 +52,6 @@
         color: #fff;
         border: 1px solid rgba(0,0,0,0.05);
         padding: 12px;
-        border-radius: 2px;
-        font-size: 12px;
         text-transform: uppercase;
         margin: 0 3%;
         text-align:center;
