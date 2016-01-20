@@ -19,9 +19,10 @@
         <form class="form-wrapper cf">
 <!--            <button class="col-md-2 vb-search-btn test" type="submit" style="float: left">Search</button>-->
 
-            <div class="col-md-2 vb-search-location dropdown toggle" style="float: left">
+            <div class="col-md-2 col-xs-12 vb-search-location dropdown toggle" style="float: left">
                 <input id="t1" type="checkbox">
-                <label for="t1">Toggle Menu</label>
+                <label for="t1"><i class="fa fa-map-marker"></i>
+                    Location</label>
                 <ul>
                     <li><a href="#">Item</a></li>
                     <li><a href="#">Product</a></li>
@@ -31,8 +32,8 @@
                 </ul>
             </div>
 
-            <input class="col-md-8" type="text" placeholder="Search here..." required>
-            <button class="col-md-2 vb-search-btn" type="submit">Search</button>
+            <input class="col-md-8 col-xs-12" type="text" placeholder="Search here..." required>
+            <button class="col-md-2 col-xs-12 vb-search-btn" type="submit">Search</button>
         </form>
 
     </div>

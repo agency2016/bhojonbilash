@@ -44,6 +44,7 @@ body {
   background-color: @adbd-body-color;
 }
 
+/*start search bar*/
 .search-bar{
   margin-bottom: 15px;
   background: url('https://b.zmtcdn.com/images/homescreens/34-n.jpg');
@@ -68,7 +69,8 @@ body {
   zoom:1;
 }
 
-/*-------------------------------------*/
+/* start search btn in search bar*/
+
 
 .form-wrapper {
   //width: 450px;
@@ -157,25 +159,26 @@ body {
   position: absolute;
   border-width: 8px 8px 8px 0;
   border-style: solid solid solid none;
-  border-color: transparent #d83c3c transparent;
+  border-color: transparent @adbd-color1 transparent;
   top: 12px;
   left: -6px;
 }
 
 .form-wrapper .vb-search-btn:hover:before{
-  border-right-color: #e54040;
+  border-right-color: @adbd-color1;
 }
 
 .form-wrapper .vb-search-btn:focus:before{
-  border-right-color: #c42f2f;
+  border-right-color: @adbd-color1;
 }
 
 .form-wrapper .vb-search-btn::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
+/* end search btn in search bar*/
 
-
+/* start location dropdown in search bar*/
 .dropdown {
 
   //width: 230px;
@@ -296,6 +299,10 @@ body {
   padding: 0;
 }
 
+/* end location dropdown in search bar*/
+/*END SEARCH BAR*/
+
+/*START SIDEBAR STYLE*/
 .list-group-item:first-child{
   border-top-right-radius:@common-border-radius;
   border-top-left-radius:@common-border-radius ;
@@ -320,6 +327,7 @@ a.list-group-item:hover,a.list-group-item:focus{
   background-color: @adbd-color1;
   border-color: @adbd-color1;
 }
+/*END SIDEBAR STYLE*/
 
 .slide-image {
   width: 100%;
