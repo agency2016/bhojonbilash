@@ -19,7 +19,7 @@
         <form class="form-wrapper cf">
 <!--            <button class="col-md-2 vb-search-btn test" type="submit" style="float: left">Search</button>-->
 
-            <div class="col-md-2 col-xs-12 vb-search-location dropdown toggle" style="float: left">
+            <div class="col-md-2 col-sm-2 col-xs-12 vb-search-location dropdown toggle search-bar-space" style="float: left">
                 <input id="t1" type="checkbox">
                 <label for="t1"><i class="fa fa-map-marker"></i>
                     Location</label>
@@ -32,8 +32,8 @@
                 </ul>
             </div>
 
-            <input class="col-md-8 col-xs-12" type="text" placeholder="Search here..." required>
-            <button class="col-md-2 col-xs-12 vb-search-btn" type="submit">Search</button>
+            <input class="col-md-8 col-sm-8 col-xs-12 search-bar-space" type="text" placeholder="Search here..." required>
+            <button class="col-md-2 col-sm-2 col-xs-12 vb-search-btn" type="submit">Search</button>
         </form>
 
     </div>
@@ -64,7 +64,7 @@
                 ?>
                 <div class="col-sm-4 col-lg-4 col-md-4">
                     <div class="thumbnail">
-                        <img src="http://placehold.it/320x150" alt="">
+                        <img src="http://placehold.it/320x200" alt="">
                         <div class="caption">
                             <h4 class="pull-right">$24.99</h4>
                             <h4><a href="<?php echo base_url('single_product/single_view')?>">First Product</a>
