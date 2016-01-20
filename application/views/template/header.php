@@ -1,5 +1,5 @@
 <style>
-    
+
     .login-box{
         position:relative;
         margin: 10px auto;
@@ -81,6 +81,7 @@
     .u-form-group{
         width:100%;
         margin-bottom: 10px;
+
     }
     .u-form-group input[type="text"],
     .u-form-group input[type="email"],
@@ -208,7 +209,7 @@
                         <input type="password" placeholder="Password"/>
                     </div>
                     <div class="u-form-group">
-                        <button class="btn adbd-btn-1">Log in</button>
+                        <button class="btn adbd-btn-1" style="">Log in</button>
                     </div>
                     <div class="u-form-group">
                         <a href="#" class="forgot-password" id="forgot_pass_link">Forgot password?</a>
@@ -239,7 +240,7 @@
                         <button class="btn adbd-btn-1">Submit</button>
                     </div>
                 </form>
-                
+
             </div>
 
 
@@ -274,7 +275,6 @@
         $(".forgotPassword").delay(100).fadeIn(100);
         $("#login-box-link").removeClass("active");
         $("#signup-box-link").removeClass("active");
-//        $("#forgot_pass_link").addClass("active");
     });
 
 </script>
