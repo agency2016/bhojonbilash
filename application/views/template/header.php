@@ -150,7 +150,6 @@
                 <li><a href="#">Order food online</a></li>
                 <li><a href="#">Login with facebook</a></li>
                 <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
-                <li><a href="#">Register</a></li>
                 <li>
 <!--                    <input type="radio" onchange="javascript:window.location.href = '<?php echo base_url(); ?>languageswitcher/switchLang/' + this.value;" class="switch-input" data-check="<?php echo ($this->session->userdata('vb_site_lang') == 'bangla') ? 1 : 0; ?>" name="view" value="bangla" id="week" <?php if ($this->session->userdata('vb_site_lang') == 'bangla') echo 'checked="checked"'; ?>>
                     <label for="week" class="switch-label switch-label-off">বাংলা</label>
