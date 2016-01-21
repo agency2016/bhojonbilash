@@ -385,7 +385,6 @@
 }
 
 a.list-group-item:hover,a.list-group-item:focus{
-  z-index: 2;
   color: #fff;
   background-color: lighten(@adbd-color1,20%);
   //border-color: @adbd-color1;
@@ -393,10 +392,10 @@ a.list-group-item:hover,a.list-group-item:focus{
 }
 
 .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
-  z-index: 2;
   color: #fff;
   background-color: @adbd-color1;
   border-color: @adbd-color1;
+  z-index: 0;
 }
 /*END SIDEBAR STYLE*/
 

@@ -12,8 +12,8 @@
         <meta name="viewport" content="width=device-width">
         <meta name="keywords" content="<?php echo $keywords ?>" />
         <meta name="author" content="<?php echo $author ?>" />
-        <link rel="shortcut icon" href="<?php echo base_url('resources/icons/favicon.ico'); ?>" type="image/x-icon">
-        <link rel="icon" href="<?php echo base_url('resources/images/favicon3.ico'); ?>" type="image/x-icon">
+        <link rel="icon" href="<?php echo base_url('resources/icons/logo.png'); ?>" type="image/png">
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         
         

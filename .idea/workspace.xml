@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="455a3b47-4a7e-4f3f-ad95-faf8806365c4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/adbd_common.css" afterPath="$PROJECT_DIR$/resources/css/adbd_common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/LESS/adbd_common.less" afterPath="$PROJECT_DIR$/resources/css/LESS/adbd_common.less" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/icons/logo.svg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/bhojonbilash.css" afterPath="$PROJECT_DIR$/resources/css/bhojonbilash.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/LESS/bhojonbilash.less" afterPath="$PROJECT_DIR$/resources/css/LESS/bhojonbilash.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/buttons.css" afterPath="$PROJECT_DIR$/resources/css/buttons.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/LESS/buttons.less" afterPath="$PROJECT_DIR$/resources/css/LESS/buttons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/template/header.php" afterPath="$PROJECT_DIR$/application/views/template/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/frontend/food/single_food_v.php" afterPath="$PROJECT_DIR$/application/views/frontend/food/single_food_v.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/typo.css" afterPath="$PROJECT_DIR$/resources/css/typo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/LESS/typo.less" afterPath="$PROJECT_DIR$/resources/css/LESS/typo.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/LESS/variables.less" afterPath="$PROJECT_DIR$/resources/css/LESS/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/template/skeleton.php" afterPath="$PROJECT_DIR$/application/views/template/skeleton.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bhojonbilash.iws" />
@@ -58,7 +51,7 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/template/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.125">
+            <state vertical-scroll-proportion="-52.5">
               <caret line="146" column="150" selection-start-line="146" selection-start-column="150" selection-end-line="146" selection-end-column="150" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#!!top" expanded="true" />
@@ -67,11 +60,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="skeleton.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/template/skeleton.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.75">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="bhojonbilash.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/css/LESS/bhojonbilash.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31361607">
-              <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.7813579">
+              <caret line="397" column="13" selection-start-line="397" selection-start-column="13" selection-end-line="397" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -143,6 +146,7 @@
         <option value="$PROJECT_DIR$/application/views/frontend/food/single_food_v.php" />
         <option value="$PROJECT_DIR$/resources/css/LESS/variables.less" />
         <option value="$PROJECT_DIR$/application/views/template/header.php" />
+        <option value="$PROJECT_DIR$/application/views/template/skeleton.php" />
         <option value="$PROJECT_DIR$/resources/css/LESS/bhojonbilash.less" />
       </list>
     </option>
@@ -565,7 +569,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/template/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.125">
+        <state vertical-scroll-proportion="-52.5">
           <caret line="146" column="150" selection-start-line="146" selection-start-column="150" selection-end-line="146" selection-end-column="150" />
           <folding>
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#!!top" expanded="true" />
@@ -573,10 +577,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/template/skeleton.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.75">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/css/LESS/bhojonbilash.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31361607">
-          <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.7813579">
+          <caret line="397" column="13" selection-start-line="397" selection-start-column="13" selection-end-line="397" selection-end-column="13" />
           <folding />
         </state>
       </provider>
