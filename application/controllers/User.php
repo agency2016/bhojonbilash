@@ -1,8 +1,15 @@
 <?php
 
-class User extends Vb_Controller {
 
-    public function register() {
+class User extends Vb_Controller
+{
+    public function profile($product_id = '')
+    {
+        $this->_render('user/user_profile');
+    }
+
+    public function register()
+    {
 
         if ($this->input->server('REQUEST_METHOD') === 'POST') {
 
@@ -48,7 +55,8 @@ class User extends Vb_Controller {
         }
     }
 
-    public function login() {
+    public function login()
+    {
 
         if ($this->input->server('REQUEST_METHOD') === 'POST') {
 
@@ -88,7 +96,8 @@ class User extends Vb_Controller {
     /**
      * password reset request using email
      */
-    public function password_reset_request() {
+    public function password_reset_request()
+    {
 
         if ($this->input->server('REQUEST_METHOD') === 'POST') {
 
@@ -115,9 +124,9 @@ class User extends Vb_Controller {
                     $encrypted_string = str_replace(array('+', '/', '='), array('-', '_', '~'), $encrypted_string);
 
                     $message = 'Hello! ' . $user_email_exist->row()->fname .
-                            '<br/> Reset Your Password From This : '
-                            . ' <a href="' . base_url('home/password_change') .
-                            '/' . $encrypted_string . '">Link</a>';
+                        '<br/> Reset Your Password From This : '
+                        . ' <a href="' . base_url('home/password_change') .
+                        '/' . $encrypted_string . '">Link</a>';
                     $from = 'adbdtest1@gmail.com';
                     $subject = "DrugBd reset password";
 
@@ -137,5 +146,5 @@ class User extends Vb_Controller {
             redirect('home');
         }
     }
-
 }
+

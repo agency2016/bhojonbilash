@@ -7,20 +7,20 @@
 <footer>
     <div class="row">
         <div class="col-md-4">
-            <h4 class="adbd_uppercase text-center">BhojonBilash</h4>
-            <p class="adbd_capitalize text-center" > <a href="#">About </a> </p>
-            <p class="adbd_capitalize text-center" > <a href="#"> Careers </a></p>
+            <h4 class="adbd-uppercase text-center">BhojonBilash</h4>
+            <p class="adbd-capitalize text-center" > <a href="#">About </a> </p>
+            <p class="adbd-capitalize text-center" > <a href="#"> Careers </a></p>
 
         </div>
         <div class="col-md-4">
-            <h4 class="adbd_uppercase text-center">Policies</h4>
-            <p class="adbd_capitalize text-center"><a href="#"> Privacy</a> </p>
-            <p class="adbd_capitalize text-center"><a href="#"> Terms</a> </p>
+            <h4 class="adbd-uppercase text-center">Policies</h4>
+            <p class="adbd-capitalize text-center"><a href="#"> Privacy</a> </p>
+            <p class="adbd-capitalize text-center"><a href="#"> Terms</a> </p>
         </div>
         <div class="col-md-4">
-            <h4 class="adbd_uppercase text-center">Other</h4>
-            <p class="adbd_capitalize text-center"><a href="#"> Contact</a> </p>
-            <p class="adbd_capitalize text-center"><a href="#"> sitemap</a> </p>
+            <h4 class="adbd-uppercase text-center">Other</h4>
+            <p class="adbd-capitalize text-center"><a href="#"> Contact</a> </p>
+            <p class="adbd-capitalize text-center"><a href="#"> sitemap</a> </p>
         </div>
     </div>
     <hr>
