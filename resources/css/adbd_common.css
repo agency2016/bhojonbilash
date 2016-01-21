@@ -233,6 +233,6 @@ a:hover {
   transition: all 0.1s linear;
 }
 .adbd-input:focus {
-  border-color: #CB202F;
+  border-color: #cb202d;
 }
 /*end of common style*/

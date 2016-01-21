@@ -5,9 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/adbd_common.css" afterPath="$PROJECT_DIR$/resources/css/adbd_common.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/LESS/adbd_common.less" afterPath="$PROJECT_DIR$/resources/css/LESS/adbd_common.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/bhojonbilash.css" afterPath="$PROJECT_DIR$/resources/css/bhojonbilash.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/LESS/bhojonbilash.less" afterPath="$PROJECT_DIR$/resources/css/LESS/bhojonbilash.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/frontend/user/user_profile.php" afterPath="$PROJECT_DIR$/application/views/frontend/user/user_profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bhojonbilash.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,8 +62,8 @@
       <file leaf-file-name="adbd_common.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/css/LESS/adbd_common.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8453608">
-              <caret line="171" column="1" selection-start-line="171" selection-start-column="1" selection-end-line="171" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.8109966">
+              <caret line="169" column="30" selection-start-line="169" selection-start-column="30" selection-end-line="169" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -518,8 +515,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/css/LESS/adbd_common.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8453608">
-          <caret line="171" column="1" selection-start-line="171" selection-start-column="1" selection-end-line="171" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.8109966">
+          <caret line="169" column="30" selection-start-line="169" selection-start-column="30" selection-end-line="169" selection-end-column="30" />
           <folding />
         </state>
       </provider>
