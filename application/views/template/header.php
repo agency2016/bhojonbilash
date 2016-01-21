@@ -111,21 +111,7 @@
         border-color: #CB202F;
     }
 
-<<<<<<< HEAD
-    .u-form-group button {
-        width: 50%;
-        background-color: #1CB94E;
-        border: none;
-        outline: none;
-        color: #fff;
-        font-size: 14px;
-        font-weight: normal;
-        padding: 14px 0;
-        border-radius: 2px;
-        text-transform: uppercase;
-    }
 
-=======
     /*.u-form-group button{*/
     /*width:50%;*/
     /*background-color: #1CB94E;*/
@@ -138,7 +124,6 @@
     /*border-radius: 2px;*/
     /*text-transform: uppercase;*/
     /*}*/
->>>>>>> origin/master
     .forgot-password {
         width: 50%;
         text-align: left;

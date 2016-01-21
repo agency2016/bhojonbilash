@@ -85,10 +85,6 @@ class User extends Vb_Controller {
         }
     }
 
-    public function login_demo(){
-
-    }
-
     /**
      * password reset request using email
      */
