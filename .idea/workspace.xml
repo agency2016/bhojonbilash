@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="98e77f3b-6e91-448f-9f37-3c14ba413b08" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/adbd_common.css" afterPath="$PROJECT_DIR$/resources/css/adbd_common.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/LESS/adbd_common.less" afterPath="$PROJECT_DIR$/resources/css/LESS/adbd_common.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/bhojonbilash.css" afterPath="$PROJECT_DIR$/resources/css/bhojonbilash.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/frontend/user/user_profile.php" afterPath="$PROJECT_DIR$/application/views/frontend/user/user_profile.php" />
+=======
     <list default="true" id="455a3b47-4a7e-4f3f-ad95-faf8806365c4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -9,6 +16,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/frontend/user/edit_profile.php" afterPath="$PROJECT_DIR$/application/views/frontend/user/edit_profile.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/template/footer.php" afterPath="$PROJECT_DIR$/application/views/template/footer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/bootstrap.css" afterPath="$PROJECT_DIR$/resources/css/bootstrap.css" />
+>>>>>>> origin/master
     </list>
     <ignored path="bhojonbilash.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,9 +51,18 @@
       <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/User.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state vertical-scroll-proportion="-18.125">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding>
+                <element signature="n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#1;n#div#0;n#!!top" expanded="false" />
+              </folding>
+=======
             <state vertical-scroll-proportion="-3.125">
               <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
               <folding />
+>>>>>>> origin/master
             </state>
           </provider>
         </entry>
@@ -63,8 +80,13 @@
       <file leaf-file-name="Member.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Member.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state vertical-scroll-proportion="0.8281787">
+              <caret line="170" column="31" selection-start-line="170" selection-start-column="31" selection-end-line="170" selection-end-column="31" />
+=======
             <state vertical-scroll-proportion="-6.875">
               <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+>>>>>>> origin/master
               <folding />
             </state>
           </provider>
@@ -445,6 +467,9 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/resources/css/LESS/buttons.less">
+=======
     <entry file="file://$PROJECT_DIR$/application/models/Vb_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -486,6 +511,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/template/footer.php">
+>>>>>>> origin/master
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -493,6 +519,8 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
     <entry file="file://$PROJECT_DIR$/resources/css/LESS/bhojonbilash.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -541,6 +569,7 @@
         </state>
       </provider>
     </entry>
+>>>>>>> origin/master
     <entry file="file://$PROJECT_DIR$/resources/css/LESS/bhojonbilash.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -658,8 +687,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/frontend/user/user_profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.125">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#1;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#1;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/css/LESS/adbd_common.less">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.8281787">
+          <caret line="170" column="31" selection-start-line="170" selection-start-column="31" selection-end-line="170" selection-end-column="31" />
+=======
         <state vertical-scroll-proportion="-1.6633065">
           <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
           <folding />
@@ -705,8 +757,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/template/footer.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.21370968">
           <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+=======
+        <state vertical-scroll-proportion="5.141129">
+          <caret line="253" column="26" selection-start-line="253" selection-start-column="26" selection-end-line="253" selection-end-column="26" />
+>>>>>>> origin/master
+>>>>>>> origin/master
           <folding />
         </state>
       </provider>
