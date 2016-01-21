@@ -26,7 +26,10 @@
                 <div class="profile-sidebar">
                     <!-- SIDEBAR USERPIC -->
                     <div class="profile-userpic">
-                        <img src="https://lh3.googleusercontent.com/-bSNE-_iWMao/AAAAAAAAAAI/AAAAAAAAAlQ/k_TPiq1-9qU/s60-p-no/photo.jpg" class="img-responsive" alt="">
+<!--                        <img src="--><?php //echo base_url('resources/images/ww.jpg')?><!--" class="img-responsive" alt="">-->
+                        <div id="overlay">
+                            <span id="plus">+</span>
+                        </div>
                     </div>
                     <!-- END SIDEBAR USERPIC -->
                     <!-- SIDEBAR USER TITLE -->
@@ -207,7 +210,10 @@
                 <div class="profile-sidebar">
                     <!-- SIDEBAR USERPIC -->
                     <div class="profile-userpic">
-                        <img src="https://lh3.googleusercontent.com/-bSNE-_iWMao/AAAAAAAAAAI/AAAAAAAAAlQ/k_TPiq1-9qU/s60-p-no/photo.jpg" class="img-responsive" alt="">
+                        <img src="<?php echo base_url('resources/images/ww.jpg')?>" class="img-responsive" alt="">
+                        <div id="overlay">
+                            <span id="plus">+</span>
+                        </div>
                     </div>
                     <!-- END SIDEBAR USERPIC -->
                     <!-- SIDEBAR USER TITLE -->

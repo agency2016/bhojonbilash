@@ -225,4 +225,14 @@ a:hover {
 .adbd-capitalize {
   text-transform: capitalize;
 }
+.adbd-input {
+  outline: none;
+  border: 1px solid #ddd;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.adbd-input:focus {
+  border-color: #CB202F;
+}
 /*end of common style*/
