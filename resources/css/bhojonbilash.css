@@ -225,6 +225,16 @@ a:hover {
 .adbd-capitalize {
   text-transform: capitalize;
 }
+.adbd-input {
+  outline: none;
+  border: 1px solid #ddd;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.adbd-input:focus {
+  border-color: #cb202d;
+}
 /*end of common style*/
 /*START NAVBAR*/
 .vb-navbar {
@@ -594,15 +604,35 @@ a.list-group-item:focus {
 }
 /* Profile sidebar */
 .profile-sidebar {
-  padding: 20px 0 10px 0;
   background: #fff;
 }
 .profile-userpic img {
   float: none;
   margin: 0 auto;
-  width: 50%;
+  width: 100%;
   height: 50%;
   border-radius: 0px !important;
+}
+.profile-userpic img:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #FFF;
+}
+#overlay {
+  background: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  padding: 45px 0 66px 0;
+  opacity: 0;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+}
+.profile-userpic:hover #overlay {
+  opacity: 1;
+}
+#plus {
+  font-family: Helvetica;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 96px;
 }
 .profile-usertitle {
   text-align: center;
@@ -649,7 +679,7 @@ a.list-group-item:focus {
 }
 .profile-follow-wrapper {
   overflow: hidden;
-  margin: 20px auto 20px auto;
+  margin: 20px auto 0px auto;
   display: table;
   width: 100%;
 }
@@ -674,7 +704,6 @@ a.list-group-item:focus {
   height: 40px;
   border-top: 1px solid #E1E1E1;
   margin: 10px 0 10px -1px;
-  padding-top: 20px;
   text-align: center;
   display: table-cell;
   color: #959595;
@@ -684,8 +713,12 @@ a.list-group-item:focus {
   -moz-transition: all 1s ease 0s;
   transition: all 1s ease 0s;
 }
-.profile-usermenu {
-  margin-top: 30px;
+.profile-followers:hover,
+.profile-following:hover {
+  background-color: #EEEEEE;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
 }
 .profile-usermenu ul li {
   border-bottom: 1px solid #f0f4f7;
