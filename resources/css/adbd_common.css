@@ -1,21 +1,13 @@
-.btn {
-  border: none;
-  color: white;
-  overflow: hidden;
-  margin: 1rem;
-  padding: 0;
+.adbd-btn-1 {
+  background-color: #cb202d;
+  color: #ffffff;
   text-transform: uppercase;
-  width: 150px;
-  height: 40px;
   border-radius: 0;
 }
-.btn.adbd-btn-1 {
-  background-color: #cb202f;
-}
-.btn.adbd-btn-1:hover {
+.adbd-btn-1:hover {
   background-color: transparent;
-  border: 1px solid #cb202f;
-  color: #cb202f;
+  border: 1px solid #cb202d;
+  color: #cb202d;
 }
 .btn.adbd-btn-2 {
   background-color: #e81d62;
@@ -83,13 +75,13 @@ body {
   font-size: 14px;
   color: #404040;
   background-color: #dddddd;
-  padding-top: 70px;
+  padding-top: 50px;
 }
 a {
-  color: #cb202f;
+  color: #cb202d;
 }
 a:hover {
-  color: #9f1925;
+  color: #9f1923;
   text-decoration: none;
 }
 .adbd-checkbox {
@@ -107,7 +99,7 @@ a:hover {
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
   display: inline-block;
   height: 20px;
-  border: 1px solid #cb202f;
+  border: 1px solid #cb202d;
   margin: 4px 0 0;
   position: relative;
   width: 20px;
@@ -137,7 +129,7 @@ a:hover {
   transform: rotate(45deg);
 }
 .adbd-checkbox:checked + .ck-span {
-  background: #cb202f;
+  background: #cb202d;
 }
 .adbd-checkbox:checked + .ck-span::before {
   height: 11px;
@@ -206,7 +198,7 @@ a:hover {
   box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.5);
 }
 .radioadbd input[type=radio]:checked + label {
-  background: #cb202f;
+  background: #cb202d;
 }
 .selectadbd select {
   background: transparent;
@@ -226,10 +218,10 @@ a:hover {
   min-height: 500px!important;
   margin-top: 100px;
 }
-.adbd_uppercase {
+.adbd-uppercase {
   text-transform: uppercase;
 }
-.adbd_capitalize {
+.adbd-capitalize {
   text-transform: capitalize;
 }
 /*end of common style*/

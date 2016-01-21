@@ -1,27 +1,29 @@
 <style>
 
-    .login-box{
-        position:relative;
+    .login-box {
+        position: relative;
         margin: 10px auto;
         width: 100%;
         height: 360px;
         background-color: #fff;
         padding: 10px;
         border-radius: 3px;
-        -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
-        -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
-        box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+        -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.33);
+        -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.33);
+        box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.33);
     }
-    .lb-header{
-        position:relative;
+
+    .lb-header {
+        position: relative;
         color: #00415d;
         margin: 5px 5px 10px 5px;
-        padding-bottom:10px;
+        padding-bottom: 10px;
         border-bottom: 1px solid #eee;
-        text-align:center;
-        height:28px;
+        text-align: center;
+        height: 28px;
     }
-    .lb-header a{
+
+    .lb-header a {
         margin: 0 25px;
         padding: 0 20px;
         text-decoration: none;
@@ -32,91 +34,101 @@
         -moz-transition: all 0.1s linear;
         transition: all 0.1s linear;
     }
-    .lb-header .active{
+
+    .lb-header .active {
         color: #CB202F;
         font-size: 18px;
     }
-    .social-login{
-        position:relative;
+
+    .social-login {
+        position: relative;
         /*float: left;*/
         width: 100%;
-        height:72px;
+        height: 72px;
         padding: 10px 0 15px 0;
         border-bottom: 1px solid #eee;
     }
-    .social-login a{
-        position:relative;
+
+    .social-login a {
+        position: relative;
         /*float: left;*/
         width: calc(65% - 22px);
         text-decoration: none;
         color: #fff;
-        border: 1px solid rgba(0,0,0,0.05);
+        border: 1px solid rgba(0, 0, 0, 0.05);
         padding: 12px;
         text-transform: uppercase;
         margin: 0 3%;
-        text-align:center;
+        text-align: center;
         margin-bottom: 10px;
     }
-    .social-login a i{
+
+    .social-login a i {
         position: relative;
         float: left;
         width: 20px;
         top: 2px;
     }
-    .social-login a:first-child{
+
+    .social-login a:first-child {
         background-color: #49639F;
     }
-    .social-login a:last-child{
+
+    .social-login a:last-child {
         background-color: #DF4A32;
     }
-    .email-login,.email-signup,.forgotPassword{
-        position:relative;
+
+    .email-login, .email-signup, .forgotPassword {
+        position: relative;
         float: left;
         width: 100%;
-        height:auto;
+        height: auto;
         margin-top: 20px;
-        text-align:center;
+        text-align: center;
     }
-    .u-form-group{
-        width:100%;
+
+    .u-form-group {
+        width: 100%;
         margin-bottom: 10px;
 
     }
+
     .u-form-group input[type="text"],
     .u-form-group input[type="email"],
-    .u-form-group input[type="password"]{
+    .u-form-group input[type="password"] {
         width: calc(65% - 22px);
-        height:41px;
+        height: 41px;
         outline: none;
         border: 1px solid #ddd;
         padding: 0 10px;
         color: #333;
-        -webkit-transition:all 0.1s linear;
-        -moz-transition:all 0.1s linear;
-        transition:all 0.1s linear;
+        -webkit-transition: all 0.1s linear;
+        -moz-transition: all 0.1s linear;
+        transition: all 0.1s linear;
     }
-    .u-form-group input:focus{
+
+    .u-form-group input:focus {
         border-color: #CB202F;
     }
-    .u-form-group button{
-        width:50%;
-        background-color: #1CB94E;
-        border: none;
-        outline: none;
-        color: #fff;
-        font-size: 14px;
-        font-weight: normal;
-        padding: 14px 0;
-        border-radius: 2px;
-        text-transform: uppercase;
-    }
-    .forgot-password{
-        width:50%;
+
+    /*.u-form-group button{*/
+    /*width:50%;*/
+    /*background-color: #1CB94E;*/
+    /*border: none;*/
+    /*outline: none;*/
+    /*color: #fff;*/
+    /*font-size: 14px;*/
+    /*font-weight: normal;*/
+    /*padding: 14px 0;*/
+    /*border-radius: 2px;*/
+    /*text-transform: uppercase;*/
+    /*}*/
+    .forgot-password {
+        width: 50%;
         text-align: left;
         text-decoration: underline;
         color: #888;
     }
-
 
 
 </style>
@@ -125,13 +137,14 @@
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?php echo base_url() ?>">BB</a>
+            <a class="navbar-brand" href="<?php echo base_url() ?>"><img src="<?php echo base_url('/resources/icons/logo.png')?>" style="height: 45px"></a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -151,17 +164,26 @@
                 <li><a href="#">Login with facebook</a></li>
                 <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
                 <li>
-<!--                    <input type="radio" onchange="javascript:window.location.href = '<?php echo base_url(); ?>languageswitcher/switchLang/' + this.value;" class="switch-input" data-check="<?php echo ($this->session->userdata('vb_site_lang') == 'bangla') ? 1 : 0; ?>" name="view" value="bangla" id="week" <?php if ($this->session->userdata('vb_site_lang') == 'bangla') echo 'checked="checked"'; ?>>
+                    <!--                    <input type="radio" onchange="javascript:window.location.href = '<?php echo base_url(); ?>languageswitcher/switchLang/' + this.value;" class="switch-input" data-check="<?php echo ($this->session->userdata('vb_site_lang') == 'bangla') ? 1 : 0; ?>" name="view" value="bangla" id="week" <?php if ($this->session->userdata('vb_site_lang') == 'bangla') echo 'checked="checked"'; ?>>
                     <label for="week" class="switch-label switch-label-off">বাংলা</label>
                     <input type="radio" onchange="javascript:window.location.href = '<?php echo base_url(); ?>languageswitcher/switchLang/' + this.value;" class="switch-input" data-check="<?php echo ($this->session->userdata('vb_site_lang') == 'english') ? 1 : 0; ?>" name="view" value="english" id="month" <?php if ($this->session->userdata('vb_site_lang') == 'english') echo 'checked="checked"'; ?>>
                     <label for="month" class="switch-label switch-label-on">En</label>
                     <span class="switch-selection"></span>-->
 
                     <label id="sliderLabel">
-                        <input type="checkbox" />
+                        <input type="checkbox"/>
                         <span id="slider"></span>
-                        <span id="sliderOn" onchange="javascript:window.location.href = '<?php echo base_url(); ?>languageswitcher/switchLang/' + this.value;" data-check="<?php echo ($this->session->userdata('vb_site_lang') == 'bangla') ? 1 : 0; ?>" name="view" value="bangla" id="week" <?php if ($this->session->userdata('vb_site_lang') == 'bangla') echo 'checked="checked"'; ?>>BN</span>
-                        <span id="sliderOff" onchange="javascript:window.location.href = '<?php echo base_url(); ?>languageswitcher/switchLang/' + this.value;" class="switch-input" data-check="<?php echo ($this->session->userdata('vb_site_lang') == 'english') ? 1 : 0; ?>" name="view" value="english" id="month" <?php if ($this->session->userdata('vb_site_lang') == 'english') echo 'checked="checked"'; ?>>EN</span>
+                        <span id="sliderOn"
+                              onchange="javascript:window.location.href = '<?php echo base_url(); ?>languageswitcher/switchLang/' + this.value;"
+                              data-check="<?php echo ($this->session->userdata('vb_site_lang') == 'bangla') ? 1 : 0; ?>"
+                              name="view" value="bangla"
+                              id="week" <?php if ($this->session->userdata('vb_site_lang') == 'bangla') echo 'checked="checked"'; ?>>BN</span>
+                        <span id="sliderOff"
+                              onchange="javascript:window.location.href = '<?php echo base_url(); ?>languageswitcher/switchLang/' + this.value;"
+                              class="switch-input"
+                              data-check="<?php echo ($this->session->userdata('vb_site_lang') == 'english') ? 1 : 0; ?>"
+                              name="view" value="english"
+                              id="month" <?php if ($this->session->userdata('vb_site_lang') == 'english') echo 'checked="checked"'; ?>>EN</span>
                     </label>
 
                 </li>
@@ -175,8 +197,9 @@
 </nav>
 
 
-<!--LOGIN--> 
-<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+<!--LOGIN-->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+     style="display: none;">
 
     <div class="modal-dialog">
         <div class="loginmodal-container">
