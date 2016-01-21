@@ -160,7 +160,7 @@
             <!--                    </li>-->
             <!--                </ul>-->
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Order food online</a></li>
+                <li class="btn-order adbd-uppercase"><a href="#">Order food</a></li>
                 <li><a href="#">Login with facebook</a></li>
                 <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
                 <li>

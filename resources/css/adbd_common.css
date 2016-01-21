@@ -9,13 +9,14 @@
   border: 1px solid #cb202d;
   color: #cb202d;
 }
-.btn.adbd-btn-2 {
-  background-color: #e81d62;
+.adbd-btn-2 {
+  background-color: #cb202d;
+  color: #FFF !important;
+  height: 20px;
 }
-.btn.adbd-btn-2:hover {
-  background-color: transparent;
-  border: 1px solid #e81d62;
-  color: #e81d62;
+.adbd-btn-2:hover {
+  background-color: #dd2735;
+  color: #FFF;
 }
 .adbd_input {
   border-radius: 0;
