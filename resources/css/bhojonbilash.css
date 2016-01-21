@@ -226,6 +226,12 @@ a:hover {
   min-height: 500px!important;
   margin-top: 100px;
 }
+.adbd_uppercase {
+  text-transform: uppercase;
+}
+.adbd_capitalize {
+  text-transform: capitalize;
+}
 /*end of common style*/
 /*START NAVBAR*/
 .vb-navbar {
