@@ -97,32 +97,146 @@
             </div>
         </div>
 
-        <div class="col-lg-6">
+
+        <div class="col-md-6">
 
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
 
-                    <h4 class="adbd-uppercase">General information</h4>
+                    <h4 class="adbd-uppercase">General information
+                        <small class="pull-right"><input type="checkbox" class="adbd-checkbox"><span
+                                class="ck-span"></span> public
+                        </small>
+                    </h4>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Phone</label>
+                        <label for="exampleInput">Phone </label>
                         <input type="text" class="form-control adbd-input" id="" placeholder="Phone">
                     </div>
-
                     <div class="form-group">
-                        <label for="exampleInputFile">File input</label>
-                        <input type="file" id="exampleInputFile">
-                        <p class="help-block">Example block-level help text here.</p>
+                        <label for="exampleInput">Occupation</label>
+                        <input type="text" class="form-control adbd-input" id="" placeholder="Occupation">
                     </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox"> Check me out
-                        </label>
+
+
+                    <h4 class="adbd-uppercase" style="margin-top: 50px;">Address
+                        <small class="pull-right"><input type="checkbox" class="adbd-checkbox"><span
+                                class="ck-span"></span> public
+                        </small>
+                    </h4>
+                    <div class="form-group">
+                        <label for="">District</label>
+                        <select class="form-control adbd-input">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
                     </div>
+                    <div class="form-group">
+                        <label for="">Thana</label>
+                        <select class="form-control adbd-input">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInput">Street / Village </label>
+                        <input type="text" class="form-control adbd-input" id="" placeholder="Street / Village">
+                    </div>
+
+                    <h4 class="adbd-uppercase" style="margin-top: 50px;">User type </h4>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" class="adbd-checkbox" id="buyer"><span class="ck-span"></span> Buyer
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" class="adbd-checkbox" id="seller"><span class="ck-span"></span> Seller
+                    </label>
+
+                    <div id="seller_info" style="display: none">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="">Delevery start time</label>
+                                    <select class="form-control adbd-input">
+                                        <option>--</option>
+                                        <option>Home</option>
+                                        <option>Spacific location</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="">Delevery end time</label>
+                                    <select class="form-control adbd-input">
+                                        <option>--</option>
+                                        <option>Home</option>
+                                        <option>Spacific location</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="exampleInput"> </label>
+                                        <p class="btn bg-info btn-block" type="submit">add more</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Delevery type</label>
+                            <select class="form-control adbd-input">
+                                <option>--</option>
+                                <option>Home</option>
+                                <option>Spacific location</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <label for="exampleInput">Location name</label>
+                                    <input type="text" class="form-control adbd-input" id=""
+                                           placeholder="Spacific location">
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="exampleInput"> </label>
+                                        <p class="btn bg-info btn-block" type="submit">add more</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="exampleInput">Location name</label>
+                                    <input type="text" class="form-control adbd-input" id=""
+                                           placeholder="Spacific location">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <script>
+                        $(document).ready(function () {
+//                            $("#seller").click(function () {
+//                                $("div#seller_info").show(100);
+//                            });
+                            $('#seller').click(function() {
+                                $("#seller_info").toggle(this.checked);
+                            });
+
+
+                        });
+
+                    </script>
+
+
                 </div>
             </div>
-
-
         </div>
+
 
         <div class="col-md-3">
             <div class="profile-sidebar">
