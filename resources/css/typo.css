@@ -3,12 +3,12 @@ body {
   font-size: 14px;
   color: #404040;
   background-color: #dddddd;
-  padding-top: 70px;
+  padding-top: 50px;
 }
 a {
-  color: #cb202f;
+  color: #cb202d;
 }
 a:hover {
-  color: #9f1925;
+  color: #9f1923;
   text-decoration: none;
 }

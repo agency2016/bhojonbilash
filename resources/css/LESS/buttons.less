@@ -1,19 +1,24 @@
 @import "variables";
 
-.btn {
-  border: none;
-  color: white;
-  overflow: hidden;
-  margin: 1rem;
-  padding: 0;
-  text-transform: uppercase;
-  width: 150px;
-  height: 40px;
-  border-radius: @common-border-radius;
-}
 
-.btn.adbd-btn-1{
+//.btn {
+//  border: none;
+//  color: white;
+//  overflow: hidden;
+//  margin: 1rem;
+//  padding: 0;
+//  text-transform: uppercase;
+//  width: 150px;
+//  height: 40px;
+//  border-radius: @common-border-radius;
+//  text-align: center;
+//}
+
+.adbd-btn-1{
   background-color: @adbd-color1;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: @common-border-radius;
   &:hover{
     background-color: transparent;
     border: 1px solid @adbd-color1;
@@ -21,11 +26,12 @@
   }
 }
 
-.btn.adbd-btn-2 {
-  background-color: @adbd-color2;
+.adbd-btn-2 {
+  background-color: @adbd-color1;
+  color: #FFF !important;
+  height: 20px;
   &:hover{
-    background-color: transparent;
-    border: 1px solid @adbd-color2;
-    color:@adbd-color2;
+    background-color: lighten(@adbd-color1,5%);
+    color: #FFF;
   }
 }

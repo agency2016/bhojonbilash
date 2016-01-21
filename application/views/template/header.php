@@ -111,6 +111,7 @@
         border-color: #CB202F;
     }
 
+<<<<<<< HEAD
     .u-form-group button {
         width: 50%;
         background-color: #1CB94E;
@@ -124,6 +125,20 @@
         text-transform: uppercase;
     }
 
+=======
+    /*.u-form-group button{*/
+    /*width:50%;*/
+    /*background-color: #1CB94E;*/
+    /*border: none;*/
+    /*outline: none;*/
+    /*color: #fff;*/
+    /*font-size: 14px;*/
+    /*font-weight: normal;*/
+    /*padding: 14px 0;*/
+    /*border-radius: 2px;*/
+    /*text-transform: uppercase;*/
+    /*}*/
+>>>>>>> origin/master
     .forgot-password {
         width: 50%;
         text-align: left;
@@ -145,7 +160,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?php echo base_url() ?>">BB</a>
+            <a class="navbar-brand" href="<?php echo base_url() ?>"><img src="<?php echo base_url('/resources/icons/logo.png')?>" style="height: 45px"></a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -161,7 +176,7 @@
             <!--                    </li>-->
             <!--                </ul>-->
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Order food online</a></li>
+                <li class="btn-order adbd-uppercase"><a href="#">Order food</a></li>
                 <li><a href="#">Login with facebook</a></li>
                 <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
                 <li>

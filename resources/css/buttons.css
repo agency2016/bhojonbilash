@@ -1,27 +1,20 @@
-.btn {
-  border: none;
-  color: white;
-  overflow: hidden;
-  margin: 1rem;
-  padding: 0;
+.adbd-btn-1 {
+  background-color: #cb202d;
+  color: #ffffff;
   text-transform: uppercase;
-  width: 150px;
-  height: 40px;
   border-radius: 0;
 }
-.btn.adbd-btn-1 {
-  background-color: #cb202f;
-}
-.btn.adbd-btn-1:hover {
+.adbd-btn-1:hover {
   background-color: transparent;
-  border: 1px solid #cb202f;
-  color: #cb202f;
+  border: 1px solid #cb202d;
+  color: #cb202d;
 }
-.btn.adbd-btn-2 {
-  background-color: #e81d62;
+.adbd-btn-2 {
+  background-color: #cb202d;
+  color: #FFF !important;
+  height: 20px;
 }
-.btn.adbd-btn-2:hover {
-  background-color: transparent;
-  border: 1px solid #e81d62;
-  color: #e81d62;
+.adbd-btn-2:hover {
+  background-color: #dd2735;
+  color: #FFF;
 }
