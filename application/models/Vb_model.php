@@ -108,7 +108,7 @@ class Vb_model extends CI_Model
         }
     }// end of func
 
-   
+
 }
 
 // end of class

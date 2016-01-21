@@ -111,6 +111,21 @@
         border-color: #CB202F;
     }
 
+<<<<<<< HEAD
+    .u-form-group button {
+        width: 50%;
+        background-color: #1CB94E;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 14px;
+        font-weight: normal;
+        padding: 14px 0;
+        border-radius: 2px;
+        text-transform: uppercase;
+    }
+
+=======
     /*.u-form-group button{*/
     /*width:50%;*/
     /*background-color: #1CB94E;*/
@@ -123,6 +138,7 @@
     /*border-radius: 2px;*/
     /*text-transform: uppercase;*/
     /*}*/
+>>>>>>> origin/master
     .forgot-password {
         width: 50%;
         text-align: left;
@@ -198,6 +214,7 @@
 
 
 <!--LOGIN-->
+
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
      style="display: none;">
 
@@ -224,6 +241,9 @@
                         log in with Google
                     </a>
                 </div>
+
+                <p id="error" class="text-center" style="color: red"></p>
+
                 <form class="email-login">
                     <div class="u-form-group">
                         <input type="email" placeholder="Email"/>
@@ -238,23 +258,26 @@
                         <a href="#" class="forgot-password" id="forgot_pass_link">Forgot password?</a>
                     </div>
                 </form>
-                <form class="email-signup" style="height: 500px;">
+
+                <form role="form" id="registerfrm" onsubmit="return false;" action="" method="POST"
+                      class="email-signup">
                     <div class="u-form-group">
-                        <input type="text" placeholder="Full Name"/>
+                        <input type="text" name="full_name" id="inputName" placeholder="Full Name"/>
                     </div>
                     <div class="u-form-group">
-                        <input type="email" placeholder="Email"/>
+                        <input type="email" name="email" placeholder="Email"/>
                     </div>
                     <div class="u-form-group">
-                        <input type="password" placeholder="Password"/>
+                        <input type="password" name="regpassword" id="regpassword" placeholder="Password"/>
                     </div>
                     <div class="u-form-group">
-                        <input type="password" placeholder="Confirm Password"/>
+                        <input type="password" name="passconf" placeholder="Confirm Password"/>
                     </div>
                     <div class="u-form-group">
                         <button class="btn adbd-btn-1">Sign Up</button>
                     </div>
                 </form>
+
                 <form class="forgotPassword" id="forgot_password">
                     <div class="u-form-group">
                         <input type="email" placeholder="Email"/>
@@ -300,5 +323,108 @@
         $("#signup-box-link").removeClass("active");
     });
 
+</script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $('#registerfrm').submit(function (e) {
+
+            if (!($('#regpassword').val().match("[0-9]"))) {
+                $('#error').html("Password must contain at least one digit");
+            }
+            else if (!($('#regpassword').val().match("[a-z]"))) {
+                $('#error').html("Password must contain at least one small letter");
+            }
+            else if (!($('#regpassword').val().match("[A-Z]"))) {
+                $('#error').html("Password must contain at least one capital letter");
+            }
+            else if (($('#regpassword').val().length < 6)) {
+                $('#error').html("Password must be at least 6 digits long");
+            }
+            else {
+                var url = "<?php echo base_url('User/register')?>";
+                console.log(url);
+                $.ajax({
+                    url: url,
+                    type: "POST",
+                    data: $('#registerfrm').serialize(),
+                    dataType: "JSON",
+                    success: function (data) {
+                        if (data.errors == '') {
+                            $('#registerfrm').modal('hide');
+                            window.location.href = "<?php echo base_url('Member/complete_profilr')?>";
+                        } else {
+
+                            var val = data.errors;
+                            val = val.replace("The Email field must contain a unique value", "email address already exists");
+                            document.getElementById('error').innerHTML = val;
+                            setTimeout(function () {
+                                $('#error').html('')
+                            }, 5000);
+
+                        }
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        console.log('Error adding data');
+                    }
+                });
+                // end of ajax
+            }
+        });
+
+        $('#loginfrm').submit(function (e) {
+            var url = "http://localhost/agencyDelta/rideshare/home/login";
+            $.ajax({
+                url: url,
+                type: "POST",
+                data: $('#loginfrm').serialize(),
+                dataType: "JSON",
+                success: function (data) {
+                    if (data.errors == '') {
+                        $('#loginfrm').modal('hide');
+                        location.reload();
+                    } else {
+                        document.getElementById('error_login').innerHTML = data.errors;
+                        setTimeout(function () {
+                            $('#error_login').html('')
+                        }, 5000);
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.log('Error adding data');
+                }
+            });
+            // end of ajax
+        });
+
+        $('#forgotPassword_mail_request').submit(function (e) {
+            var url = "http://localhost/agencyDelta/rideshare/home/password_reset_request";
+            $.ajax({
+                url: url,
+                type: "POST",
+                data: $('#forgotPassword_mail_request').serialize(),
+                dataType: "JSON",
+                success: function (data) {
+                    if (data.errors == '') {
+                        $('#forgotPassword').modal('hide');
+                        swal('', data.success, 'success');
+                    } else {
+                        document.getElementById('error_forgot_password').innerHTML = data.errors;
+                        setTimeout(function () {
+                            $('#error_forgot_password').html('')
+                        }, 5000);
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.log('Error adding data');
+                }
+            });
+            // end of ajax
+        });
+
+
+    });
 </script>
 
