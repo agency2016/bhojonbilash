@@ -234,6 +234,7 @@ a:hover {
 }
 .adbd-input:focus {
   border-color: #cb202d;
+  box-shadow: none !important;
 }
 /*end of common style*/
 /*START NAVBAR*/

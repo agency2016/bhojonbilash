@@ -26,7 +26,7 @@
                 <div class="profile-sidebar">
                     <!-- SIDEBAR USERPIC -->
                     <div class="profile-userpic">
-<!--                        <img src="--><?php //echo base_url('resources/images/ww.jpg')?><!--" class="img-responsive" alt="">-->
+                        <img src="<?php echo base_url('resources/images/ww.jpg')?>" class="img-responsive" alt="">
                         <div id="overlay">
                             <span id="plus">+</span>
                         </div>
