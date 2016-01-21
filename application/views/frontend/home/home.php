@@ -59,8 +59,8 @@
 
         <div class="col-md-8">
 
-<!--                <input type="checkbox" class="adbd-checkbox" />-->
-<!--                <span class="ck-span"></span>-->
+                <input type="checkbox" class="adbd-checkbox" />
+                <span class="ck-span"></span> Public
 <!---->
 <!---->
 <!--                <input type="radio" value="None" id="male" name="gender" checked/>-->
