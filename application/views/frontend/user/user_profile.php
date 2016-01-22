@@ -30,6 +30,7 @@
                         <span class="name">Change Photo</span>
                     </div>
                     <!-- END SIDEBAR USERPIC -->
+
                     <!-- SIDEBAR USER TITLE -->
                     <div class="profile-usertitle">
                         <div class="profile-usertitle-name">
@@ -40,12 +41,14 @@
                         </div>
                     </div>
                     <!-- END SIDEBAR USER TITLE -->
+                    
                     <!-- SIDEBAR BUTTONS -->
                     <div class="profile-userbuttons">
                         <button type="button" class="btn btn-success btn-sm">Follow</button>
                         <button type="button" class="btn btn-danger btn-sm">Message</button>
                     </div>
                     <!-- END SIDEBAR BUTTONS -->
+                    
                     <!--START STICKER-->
                     <div class="profile-sticker">
                         <img src="https://a1.muscache.com/airbnb/static/badges/super_host_50-49a8ac11a8d0ff4f439e8087dcd164cc.png">
@@ -63,6 +66,7 @@
                         </div>
                     </div>
                     <!-- END FOLLOWER-->
+                    
                     <!-- SIDEBAR MENU -->
                     <div class="profile-usermenu">
                         <ul class="nav">
@@ -74,6 +78,11 @@
                             <li>
                                 <a href="#">
                                     <i class="glyphicon glyphicon-user"></i>
+                                    Edit Profile </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-user"></i>
                                     Account Settings </a>
                             </li>
                             <li>
@@ -81,11 +90,7 @@
                                     <i class="glyphicon glyphicon-list"></i>
                                     Food Item List </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <i class="glyphicon glyphicon-flag"></i>
-                                    Help </a>
-                            </li>
+                            
                         </ul>
                     </div>
                     <!-- END MENU -->
