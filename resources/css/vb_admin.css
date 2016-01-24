@@ -1,10 +1,64 @@
 /*
 only the extra css need for admin section
 */
+/*
+only the extra css need for admin section
+*/
 /* 
     Created on : Jan 20, 2016, 1:30:24 PM
     Author     : agencydelta
 */
 .vb_admin_wrapper {
   min-height: 500px;
+  background-color: #e8e8e8;
+}
+.vb_admin_body {
+  margin: 30px 0px;
+}
+.vb_admin_left {
+  background-color: #ffffff;
+  min-height: 440px;
+}
+.vb_admin_right .nav {
+  background-color: #ffffff;
+}
+.vb_admin_right .nav a:hover {
+  background-color: #f5c2c6;
+  border-radius: 0;
+  color: #fff;
+}
+.vb_admin_right .nav .active a {
+  background-color: #cb202d;
+  border-radius: 0;
+}
+.vb_admin_right .nav .active a:hover {
+  background-color: #9f1923;
+}
+.vb_admin_heading {
+  color: #cb202d;
+}
+.vb_admin_table tr:hover {
+  background-color: #fceeef;
+}
+.vb_admin_table tr td {
+  border-bottom: 1px solid #f5c2c6;
+}
+.vb_admin_table tr th {
+  border-bottom: 1px solid #f5c2c6;
+}
+.vb_admin_pagination ul {
+  list-style-type: none;
+  display: inline;
+}
+.vb_admin_pagination ul li {
+  margin: 0px;
+}
+.vb_admin_pagination ul .active {
+  background-color: #e03e4a;
+}
+.vb_admin_pagination ul .active a {
+  color: #fff!important;
+}
+.vb_admin_pagination ul .disabled a {
+  color: #f5c2c6;
 }

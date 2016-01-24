@@ -5,8 +5,77 @@ only the extra css need for admin section
     Created on : Jan 20, 2016, 1:30:24 PM
     Author     : agencydelta
 */
-
-@wrapper_min_height :500px;
+@adbd-color1:#CB202D;
+@wrapper_min_height :500;
+@admin_body_margin:30;
+@admin_body_color:#e8e8e8;
+@admin_left_background_color:#fff;
 .vb_admin_wrapper{
-    min-height: @wrapper_min_height;
+    min-height: @wrapper_min_height*1px;
+    background-color: @admin_body_color;
+}
+.vb_admin_body{
+    margin: @admin_body_margin*1px 0px;
+   
+}
+.vb_admin_left{
+    background-color: @admin_left_background_color;
+    min-height: (@wrapper_min_height - (@admin_body_margin*2))*1px;
+}
+.vb_admin_right{
+    .nav{
+       background-color:  @admin_left_background_color;
+       a {
+           &:hover{
+              background-color:lighten(@adbd-color1,40%); 
+              border-radius: 0;
+              color:#fff;
+           }
+       }
+    }
+    
+    .nav .active a{
+        background-color: @adbd-color1;
+        border-radius: 0;
+        &:hover{
+            background-color:darken(@adbd-color1,10%);
+        }
+    }
+}
+.vb_admin_heading{
+    color:@adbd-color1;
+}
+.vb_admin_table{
+    tr{
+        &:hover{
+            background-color:lighten(@adbd-color1,50%); 
+        }
+        td{
+           border-bottom: 1px solid lighten(@adbd-color1,40%); 
+        }
+        th{
+            border-bottom: 1px solid lighten(@adbd-color1,40%);
+        }
+    }
+   
+}
+.vb_admin_pagination{
+    ul{
+        list-style-type: none;
+        display: inline;
+        li{
+            
+            margin: 0px;
+            
+        }
+        .active{
+                background-color: lighten(@adbd-color1,10%);
+                a{
+                    color:#fff!important;
+                }
+            }
+            .disabled a{
+                color: lighten(@adbd-color1,40%);
+            }
+    }
 }

@@ -1,5 +1,5 @@
 
-<div class="col-md-9" data-ng-show="addedit== true">
+<div class="col-md-9 vb_admin_left" data-ng-show="addedit== true">
     <form style="form-inline" role="form" ng-submit="addeditUserSubmit()">
         <div class="form-group col-md-10">
             <input type="hidden" class="form-control" value="0" name="id" ng-model="ngID">
