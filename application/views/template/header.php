@@ -111,7 +111,6 @@
         border-color: #CB202F;
     }
 
-
     /*.u-form-group button{*/
     /*width:50%;*/
     /*background-color: #1CB94E;*/
@@ -145,7 +144,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?php echo base_url() ?>"><img src="<?php echo base_url('/resources/icons/logo.png')?>" style="height: 45px"></a>
+            <a class="navbar-brand" href="<?php echo base_url() ?>"><img
+                    src="<?php echo base_url('/resources/icons/logo.png') ?>" style="height: 45px"></a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -216,15 +216,21 @@
 
                 <div class="social-login">
 
-                    <a href="#" class="text-center">
-                        <i class="fa fa-facebook fa-lg"></i>
-                        Login in with facebook
-                    </a>
-                    <br>
-                    <a href="#" class="text-center">
-                        <i class="fa fa-google-plus fa-lg"></i>
-                        log in with Google
-                    </a>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="#" class="text-center">
+                                <i class="fa fa-facebook fa-lg"></i>
+                                Login in with facebook
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" class="text-center">
+                                <i class="fa fa-google-plus fa-lg"></i>
+                                log in with Google
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
 
                 <p id="error" class="text-center" style="color: red"></p>
