@@ -1,0 +1,20 @@
+.adbd-btn-1 {
+  background-color: #cb202d;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+.adbd-btn-1:hover {
+  background-color: transparent;
+  border: 1px solid #cb202d;
+  color: #cb202d;
+}
+.adbd-btn-2 {
+  background-color: #cb202d;
+  color: #FFF !important;
+  height: 20px;
+}
+.adbd-btn-2:hover {
+  background-color: #dd2735;
+  color: #FFF;
+}

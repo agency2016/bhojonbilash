@@ -5,7 +5,7 @@ class LanguageLoader
         $ci =& get_instance();
         $ci->load->helper('language');
         $siteLang = $ci->session->userdata('vb_site_lang');
-        
+        var_dump($siteLang);exit;
         if ($siteLang) {
             $ci->lang->load('vb',$siteLang);
             $ci->config->set_item('language', $siteLang);

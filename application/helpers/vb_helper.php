@@ -24,7 +24,11 @@ function reverse_number($number) {
         return $number;
     }
 }
-
+/**
+ * 
+ * @param type $currentDate
+ * @return type
+ */
 function reverse_date($currentDate) {
     
     $currentDate = date("d-M-Y", strtotime($currentDate));
@@ -47,7 +51,10 @@ function reverse_date($currentDate) {
         return $currentDate;
     }
 }
-
+/**
+ * 
+ * @return type
+ */
 function user_roles() {
     $siteLang = site_language();
     if ($siteLang == 'english') {
@@ -56,7 +63,10 @@ function user_roles() {
         return array('অতিথি', 'ক্রেতা', 'ম্যানেজার', 'অয়াডমিন','বিক্রেতা','কর্মি');
     }
 }
-
+/**
+ * 
+ * @return string
+ */
 function site_language() {
     $CI = & get_instance();  //get instance, access the CI superobject
 
@@ -66,7 +76,10 @@ function site_language() {
     }
     return $siteLang;
 }
-
+/**
+ * 
+ * @return array
+ */
 function get_login_user() {
     $CI = & get_instance();  //get instance, access the CI superobject
 

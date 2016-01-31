@@ -1,0 +1,41 @@
+@import "variables";
+
+
+//.btn {
+//  border: none;
+//  color: white;
+//  overflow: hidden;
+//  margin: 1rem;
+//  padding: 0;
+//  text-transform: uppercase;
+//  width: 150px;
+//  height: 40px;
+//  border-radius: @common-border-radius;
+//  text-align: center;
+//}
+
+.adbd-btn-1{
+  background-color: @adbd-color1;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: @common-border-radius;
+  &:hover{
+    background-color: transparent;
+    border: 1px solid @adbd-color1;
+    color:@adbd-color1;
+  }
+}
+
+.adbd-btn-2 {
+  background-color: @adbd-color1;
+  color: #FFF !important;
+  height: 20px;
+  &:hover{
+    background-color: lighten(@adbd-color1,5%);
+    color: #FFF;
+  }
+}
+// Button variants
+//
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons

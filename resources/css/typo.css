@@ -1,0 +1,14 @@
+body {
+  font-family: Lora, 'Times New Roman', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #404040;
+  background-color: #dddddd;
+  padding-top: 50px;
+}
+a {
+  color: #cb202d;
+}
+a:hover {
+  color: #9f1923;
+  text-decoration: none;
+}
