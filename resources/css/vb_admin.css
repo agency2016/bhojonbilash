@@ -1,9 +1,6 @@
 /*
 only the extra css need for admin section
 */
-/*
-only the extra css need for admin section
-*/
 /* 
     Created on : Jan 20, 2016, 1:30:24 PM
     Author     : agencydelta
@@ -61,4 +58,136 @@ only the extra css need for admin section
 }
 .vb_admin_pagination ul .disabled a {
   color: #f5c2c6;
+}
+/*about page*/
+.about_heading_wrpper {
+  height: 320px;
+  background-repeat: no-repeat;
+  background: black;
+}
+.about_heading {
+  color: white;
+  vertical-align: middle;
+  line-height: 320px;
+  margin: 0px;
+}
+.about_page_body {
+  text-align: center;
+  padding: 20px 30px;
+  font-size: larger;
+}
+.team_card {
+  margin: 20px 0px;
+}
+.team_card .team_image {
+  width: 250px;
+  height: 250px;
+}
+.team_card h3 {
+  text-align: center;
+  font-weight: bold;
+}
+.team_card h5 {
+  text-align: center;
+}
+/*contact page*/
+.contact_heading_wrpper {
+  height: 220px;
+  background-image: url('https://www.grubhub.com/img/grubhub/79ce417f.faq-banner-lg.png');
+  background-repeat: no-repeat;
+}
+.contact_heading_wrpper h1 {
+  color: white;
+  vertical-align: middle;
+  line-height: 220px;
+  margin: 0px;
+}
+.contact_page_body {
+  color: black;
+  border-bottom: 2px solid #e4e4e4;
+}
+.contact_wrapper {
+  margin: 20px 0px;
+}
+.contact_wrapper .contact_single {
+  margin: 20px 0px;
+}
+.contact_wrapper .title {
+  padding: 0px;
+  font-size: 20px;
+}
+.btn-contact {
+  color: #ffffff;
+  background-color: #c2185b;
+  border-color: #c2185b;
+  padding: 5px 20px;
+  font-size: 14;
+  line-height: 2;
+  border-radius: 0px;
+}
+.btn-contact:focus,
+.btn-contact.focus {
+  color: #ffffff;
+  background-color: #951246;
+  border-color: #510a26;
+}
+.btn-contact:hover {
+  color: #ffffff;
+  background-color: #951246;
+  border-color: #8c1141;
+}
+.btn-contact:active,
+.btn-contact.active,
+.open > .dropdown-toggle.btn-contact {
+  color: #ffffff;
+  background-color: #951246;
+  border-color: #8c1141;
+}
+.btn-contact:active:hover,
+.btn-contact.active:hover,
+.open > .dropdown-toggle.btn-contact:hover,
+.btn-contact:active:focus,
+.btn-contact.active:focus,
+.open > .dropdown-toggle.btn-contact:focus,
+.btn-contact:active.focus,
+.btn-contact.active.focus,
+.open > .dropdown-toggle.btn-contact.focus {
+  color: #ffffff;
+  background-color: #750e37;
+  border-color: #510a26;
+}
+.btn-contact:active,
+.btn-contact.active,
+.open > .dropdown-toggle.btn-contact {
+  background-image: none;
+}
+.btn-contact.disabled:hover,
+.btn-contact[disabled]:hover,
+fieldset[disabled] .btn-contact:hover,
+.btn-contact.disabled:focus,
+.btn-contact[disabled]:focus,
+fieldset[disabled] .btn-contact:focus,
+.btn-contact.disabled.focus,
+.btn-contact[disabled].focus,
+fieldset[disabled] .btn-contact.focus {
+  background-color: #c2185b;
+  border-color: #c2185b;
+}
+.btn-contact .badge {
+  color: #c2185b;
+  background-color: #ffffff;
+}
+.contact_phone {
+  margin-bottom: 30px;
+}
+.contact_phone i {
+  padding: 5px;
+}
+.contact_phone span {
+  padding-left: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.modal-open {
+  overflow: scroll;
 }

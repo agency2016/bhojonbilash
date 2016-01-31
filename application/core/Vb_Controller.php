@@ -1,13 +1,9 @@
 <?php
-
-if (!defined('BASEPATH'))
-    exit('No direct script access allowed');
-
 class Vb_Controller extends CI_Controller {
 
     public $default_load_list = array(
-        'vb_css' => array('bootstrap.min', 'sweetalert', 'bhojonbilash', 'adbd_common'),
-        'vb_js' => array('jquery','bootstrap.min','angular.min','bhojonbilash'),
+        'vb_css' => array('bootstrap.min', 'sweetalert', 'bhojonbilash', 'adbd_common','hover'),
+        'vb_js' => array('bootstrap.min','angular.min','bhojonbilash'),
         'vb_font' => array('Raleway', 'Dancing Script', 'Georgia', 'Times'),
         'vb_css_footer' => array(),
         'vb_js_footer' => array()
@@ -193,3 +189,4 @@ class Vb_Controller extends CI_Controller {
 
 // end of function
 }
+?>
