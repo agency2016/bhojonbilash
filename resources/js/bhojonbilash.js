@@ -13,3 +13,20 @@ else{
     //for live
     var newlocation = '/';
 }
+
+
+/*JQuery onclick ZIS*/
+
+
+$(document).ready(function() {
+    $( ".answer" ).hide();
+
+    $(".question").click(function() {
+
+        $(this).next(".answer").toggle()
+    });
+});
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});

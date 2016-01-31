@@ -22,6 +22,13 @@ class Home extends Vb_Controller {
         //$this->_render('home/contact');
     }
 
+    public function faq() {
+        $data = array();
+        $css_js = array('vb_css'=>array('vb_admin'));
+        $this->_render('home/faq',$data,$css_js);
+        //$this->_render('home/contact');
+    }
+
     public function about() {
         $data = array();
         $css_js = array('vb_css'=>array('vb_admin'));

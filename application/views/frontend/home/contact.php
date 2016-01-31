@@ -10,9 +10,13 @@
         <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 contact_page_body">
                 
                 <h2 class="">How Can We Help You ??</h2>
-                <p>Our Customer Care Team is Always There to Help</p>
+                <p class="">Our Customer Care Team is Always There to Help</p>
+            <hr>
+            <h4 class="question1">How Can We Help You ??</h4>
+            <p class="answer1">Our Customer Care Team is Always There to Help</p>
 
         </div>
+
     </div>
     
     <div class="row contact_wrapper">
