@@ -3,7 +3,7 @@
     .login-box {
         position: relative;
         margin: 10px auto;
-        width: 100%;
+        width: 70%;
         height: 360px;
         background-color: #fff;
         padding: 10px;
@@ -40,19 +40,22 @@
         font-size: 18px;
     }
 
+
     .social-login {
         position: relative;
-        /*float: left;*/
+        /!*float: left;*!/
         width: 100%;
         height: 72px;
         padding: 10px 0 15px 0;
         border-bottom: 1px solid #eee;
+
     }
+
 
     .social-login a {
         position: relative;
-        /*float: left;*/
-        width: calc(65% - 22px);
+        /!*float: left;*!/
+        width: 90%;
         text-decoration: none;
         color: #fff;
         border: 1px solid rgba(0, 0, 0, 0.05);
@@ -76,7 +79,28 @@
 
     .social-login a:last-child {
         background-color: #DF4A32;
+
     }
+ /*   #facebooktab{
+        position: relative;
+        width: 100%;
+        height: 50px;
+        background: black;
+        margin-left: 0px ;
+
+
+
+    }
+    #facebooktab a{
+        color: #FFFFFF;
+        text-transform: uppercase;
+        font-size: 18px;
+        text-decoration: none;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        margin-top: 20px;
+        text-align: center;
+
+    }*/
 
     .email-login, .email-signup, .forgotPassword {
         position: relative;
@@ -96,7 +120,7 @@
     .u-form-group input[type="text"],
     .u-form-group input[type="email"],
     .u-form-group input[type="password"] {
-        width: calc(65% - 22px);
+        width: calc(85% - 22px);
         height: 41px;
         outline: none;
         border: 1px solid #ddd;
@@ -214,24 +238,26 @@
                     <a href="#" id="signup-box-link">Sign Up</a>
                 </div>
 
-                <div class="social-login">
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <a href="#" class="text-center">
-                                <i class="fa fa-facebook fa-lg"></i>
-                                Login in with facebook
-                            </a>
-                        </div>
-                        <div class="col-md-6">
-                            <a href="#" class="text-center">
-                                <i class="fa fa-google-plus fa-lg"></i>
-                                log in with Google
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
+<!--                <div class="social-login">-->
+<!---->
+<!--                    <div class="row" id="facebooktab">-->
+<!--                        <div class="col-md-12" >-->
+<!--                            <a href="#" class="text-center">-->
+<!--                                <i class="fa fa-facebook fa-lg"></i>-->
+<!--                                Log in with facebook-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="row" id="googletab">-->
+<!--                        <div class="col-md-12" >-->
+<!--                            <a href="#" class="text-center">-->
+<!--                                <i class="fa fa-google-plus fa-lg"></i>-->
+<!--                                log in with Google-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!---->
+<!--                </div>-->
 
                 <p id="error" class="text-center" style="color: red"></p>
 
@@ -279,7 +305,6 @@
                 </form>
 
             </div>
-
 
         </div>
     </div>
