@@ -133,7 +133,7 @@
 
     .u-form-group input:focus {
         border-color: #CB202F;
-    }
+    } 
 
     /*.u-form-group button{*/
     /*width:50%;*/
