@@ -4,13 +4,28 @@
         position: relative;
         margin: 10px auto;
         width: 70%;
-        height: 360px;
+        height: 390px;
         background-color: #fff;
         padding: 10px;
         border-radius: 3px;
         -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.33);
         -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.33);
         box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.33);
+    }
+
+    body {
+        padding-right:0px !important;
+        margin-right:0px !important;
+    }
+
+    body.modal-open {
+        overflow: auto;
+    }
+    @media screen and (max-width: 577px) {
+        .login-box{
+            width:95%;
+        }
+
     }
 
     .lb-header {
@@ -81,9 +96,49 @@
         background-color: #DF4A32;
 
     }
+
+    .login-social{
+        margin-left: 10%;
+        margin-right: 10%;
+        color: #fff;
+    }
+    #login-social-google{
+        background-color: #CB202F;
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 9px;
+        font-size: large;
+    }
+    #login-social-facebook{
+        background-color: #CB202F;
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 9px;
+        font-size: large;
+
+    }
+    @media screen and (max-width: 577px) {
+        #login-social-facebook{
+            font-size: 14px;
+            padding-top: 10px;
+            height: 50px;
+        }
+        #login-social-google{
+            font-size: 14px;
+            padding-top: 10px;
+            height: 50px;
+        }
+        #signup-box-link{
+            font-size: 14px;
+        }
+    }
  /*   #facebooktab{
         position: relative;
-        width: 100%;
+        width: 100%; 577 227
         height: 50px;
         background: black;
         margin-left: 0px ;
@@ -157,10 +212,10 @@
 
 </style>
 <!-- Navigation -->
-<nav class="container navbar navbar-inverse navbar-fixed-top vb-navbar" role="navigation">
-    <div class="container">
+<nav class="container navbar navbar-inverse navbar-fixed-top vb-navbar" role="navigation" >
+    <div class="container" >
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
+        <div class="navbar-header" >
             <button type="button" class="navbar-toggle" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -225,39 +280,30 @@
 <!--LOGIN-->
 
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
-     style="display: none;">
+     style="display: none;" >
 
     <div class="modal-dialog">
         <div class="loginmodal-container">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
 
 
             <div class="login-box">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <div class="lb-header">
                     <a href="#" class="active" id="login-box-link">Login</a>
                     <a href="#" id="signup-box-link">Sign Up</a>
                 </div>
 
-<!--                <div class="social-login">-->
-<!---->
-<!--                    <div class="row" id="facebooktab">-->
-<!--                        <div class="col-md-12" >-->
-<!--                            <a href="#" class="text-center">-->
-<!--                                <i class="fa fa-facebook fa-lg"></i>-->
-<!--                                Log in with facebook-->
-<!--                            </a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="row" id="googletab">-->
-<!--                        <div class="col-md-12" >-->
-<!--                            <a href="#" class="text-center">-->
-<!--                                <i class="fa fa-google-plus fa-lg"></i>-->
-<!--                                log in with Google-->
-<!--                            </a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!---->
-<!--                </div>-->
+
+                <!--SOCIAL LOGIN-->
+                <div class="row login-social"  >
+                    <div class="col-md-12" id="login-social-facebook"><span class="fa fa-facebook-square" style="margin-right: 30px; font-size: larger; "></span>LOGIN WITH FACEBOOK</div>
+                </div>
+                <br>
+                <div class="row login-social"  >
+                    <div class="col-md-12" id="login-social-google" ><span class="fa fa-google-plus-square" style="margin-right: 40px; font-size: larger; "></span>LOGIN WITH GOOGLE+</div>
+                </div>
+                <!--/SOCIAL LOGIN-->
 
                 <p id="error" class="text-center" style="color: red"></p>
 
