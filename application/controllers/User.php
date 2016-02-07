@@ -1,23 +1,20 @@
 <?php
 
+class User extends Vb_Controller {
 
-class User extends Vb_Controller
-{
-    public function profile($product_id = '')
-    {
+    public function profile($product_id = '') {
         $this->_render('user/user_profile');
     }
 
-    public function register()
-    {
+    public function register() {
 
         if ($this->input->server('REQUEST_METHOD') === 'POST') {
 
             $data['errors'] = '';
 
-            $this->form_validation->set_rules('full_name', 'Full Name', 'required|trim|max_length[90]');
-            $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email|is_unique[user.email]');
-            $this->form_validation->set_rules('regpassword', 'Password', 'trim|required');
+            $this->form_validation->set_rules('full_name', 'Full Name', 'required|trim|max_length[180]');
+            $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email|is_unique[user.email]|max_length[180]');
+            $this->form_validation->set_rules('regpassword', 'Password', 'trim|required|max_length[180]');
             $this->form_validation->set_rules('passconf', 'Password Confirmation', 'required|matches[regpassword]');
 
 
@@ -55,8 +52,7 @@ class User extends Vb_Controller
         }
     }
 
-    public function login()
-    {
+    public function login() {
 
         if ($this->input->server('REQUEST_METHOD') === 'POST') {
 
@@ -96,8 +92,7 @@ class User extends Vb_Controller
     /**
      * password reset request using email
      */
-    public function password_reset_request()
-    {
+    public function password_reset_request() {
 
         if ($this->input->server('REQUEST_METHOD') === 'POST') {
 
@@ -124,9 +119,9 @@ class User extends Vb_Controller
                     $encrypted_string = str_replace(array('+', '/', '='), array('-', '_', '~'), $encrypted_string);
 
                     $message = 'Hello! ' . $user_email_exist->row()->fname .
-                        '<br/> Reset Your Password From This : '
-                        . ' <a href="' . base_url('home/password_change') .
-                        '/' . $encrypted_string . '">Link</a>';
+                            '<br/> Reset Your Password From This : '
+                            . ' <a href="' . base_url('home/password_change') .
+                            '/' . $encrypted_string . '">Link</a>';
                     $from = 'adbdtest1@gmail.com';
                     $subject = "DrugBd reset password";
 
@@ -146,5 +141,5 @@ class User extends Vb_Controller
             redirect('home');
         }
     }
-}
 
+}

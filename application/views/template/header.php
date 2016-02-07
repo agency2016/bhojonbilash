@@ -136,26 +136,26 @@
             font-size: 14px;
         }
     }
- /*   #facebooktab{
-        position: relative;
-        width: 100%; 577 227
-        height: 50px;
-        background: black;
-        margin-left: 0px ;
-
-
-
-    }
-    #facebooktab a{
-        color: #FFFFFF;
-        text-transform: uppercase;
-        font-size: 18px;
-        text-decoration: none;
-        border: 1px solid rgba(0, 0, 0, 0.05);
-        margin-top: 20px;
-        text-align: center;
-
-    }*/
+    /*   #facebooktab{
+           position: relative;
+           width: 100%; 577 227
+           height: 50px;
+           background: black;
+           margin-left: 0px ;
+   
+   
+   
+       }
+       #facebooktab a{
+           color: #FFFFFF;
+           text-transform: uppercase;
+           font-size: 18px;
+           text-decoration: none;
+           border: 1px solid rgba(0, 0, 0, 0.05);
+           margin-top: 20px;
+           text-align: center;
+   
+       }*/
 
     .email-login, .email-signup, .forgotPassword {
         position: relative;
@@ -242,14 +242,20 @@
             <ul class="nav navbar-nav navbar-right">
                 <li class="btn-order adbd-uppercase"><a href="#">Order food</a></li>
                 <li><a href="#">Login with facebook</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
-                <li>
-                    <!--                    <input type="radio" onchange="javascript:window.location.href = '<?php echo base_url(); ?>languageswitcher/switchLang/' + this.value;" class="switch-input" data-check="<?php echo ($this->session->userdata('vb_site_lang') == 'bangla') ? 1 : 0; ?>" name="view" value="bangla" id="week" <?php if ($this->session->userdata('vb_site_lang') == 'bangla') echo 'checked="checked"'; ?>>
-                    <label for="week" class="switch-label switch-label-off">বাংলা</label>
-                    <input type="radio" onchange="javascript:window.location.href = '<?php echo base_url(); ?>languageswitcher/switchLang/' + this.value;" class="switch-input" data-check="<?php echo ($this->session->userdata('vb_site_lang') == 'english') ? 1 : 0; ?>" name="view" value="english" id="month" <?php if ($this->session->userdata('vb_site_lang') == 'english') echo 'checked="checked"'; ?>>
-                    <label for="month" class="switch-label switch-label-on">En</label>
-                    <span class="switch-selection"></span>-->
+                <?php
+                if ($this->session->userdata('vb_login_user')) {
+                    ?>
+                    <li><a href="#" >Hi <?php echo $this->session->userdata('vb_login_user')['vb_user_name']?></a></li>
+                    <li><a href="<?php echo base_url('Member/log_out')?>" >LogOut</a></li>
+                    <?php
+                } else {
+                    ?>
+                    <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
+                    <?php
+                }
+                ?>
 
+                <li>
                     <label id="sliderLabel">
                         <input type="checkbox"/>
                         <span id="slider"></span>
@@ -265,7 +271,6 @@
                               name="view" value="english"
                               id="month" <?php if ($this->session->userdata('vb_site_lang') == 'english') echo 'checked="checked"'; ?>>EN</span>
                     </label>
-
                 </li>
 
 
@@ -285,8 +290,6 @@
     <div class="modal-dialog">
         <div class="loginmodal-container">
 
-
-
             <div class="login-box">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <div class="lb-header">
@@ -305,9 +308,10 @@
                 </div>
                 <!--/SOCIAL LOGIN-->
 
-                <p id="error" class="text-center" style="color: red"></p>
 
-                <form class="email-login">
+                <p id="error" class="text-center" style="color: red; margin-top: 15px;"></p>
+
+                <form role="form" id="loginfrm" onsubmit="return false;" action="" method="POST" class="email-login">
                     <div class="u-form-group">
                         <input type="email" placeholder="Email"/>
                     </div>
@@ -367,7 +371,7 @@
         $("#login-box-link").removeClass("active");
         $("#forgot_pass_link").removeClass("forgot-password");
         $("#signup-box-link").addClass("active");
-        $(".login-box").height(415);
+        $(".login-box").height(470);
     });
     $("#login-box-link").click(function () {
         $(".email-signup").fadeOut(100);
@@ -376,6 +380,7 @@
         $("#login-box-link").addClass("active");
         $("#signup-box-link").removeClass("active");
         $("#forgot_pass_link").removeClass("active");
+        $(".login-box").height(400);
     });
     $("#forgot_pass_link").click(function () {
         $(".email-login").fadeOut(100);
@@ -383,6 +388,7 @@
         $(".forgotPassword").delay(100).fadeIn(100);
         $("#login-box-link").removeClass("active");
         $("#signup-box-link").removeClass("active");
+        $(".login-box").height(320);
     });
 
 </script>
@@ -406,7 +412,7 @@
                 $('#error').html("Password must be at least 6 digits long");
             }
             else {
-                var url = "<?php echo base_url('User/register')?>";
+                var url = "<?php echo base_url('User/register') ?>";
                 console.log(url);
                 $.ajax({
                     url: url,
@@ -416,9 +422,8 @@
                     success: function (data) {
                         if (data.errors == '') {
                             $('#registerfrm').modal('hide');
-                            window.location.href = "<?php echo base_url('Member/complete_profilr')?>";
+                            window.location.href = "<?php echo base_url('Member/my_profile') ?>";
                         } else {
-
                             var val = data.errors;
                             val = val.replace("The Email field must contain a unique value", "email address already exists");
                             document.getElementById('error').innerHTML = val;
@@ -437,7 +442,7 @@
         });
 
         $('#loginfrm').submit(function (e) {
-            var url = "http://localhost/agencyDelta/rideshare/home/login";
+            var url = "<?php echo base_url('index.php/User/login')?>";
             $.ajax({
                 url: url,
                 type: "POST",
