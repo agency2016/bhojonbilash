@@ -67,7 +67,7 @@
                                 Overview </a>
                         </li>
                         <li>
-                            <a href="<?php echo base_url('Member/edit_profile')?>">
+                            <a href="<?php echo base_url('Member/prifile_info')?>">
                                 <i class="glyphicon glyphicon-user"></i>
                                 Account Settings </a>
                         </li>

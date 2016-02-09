@@ -28,9 +28,8 @@
             <div class="profile-sidebar">
                 <!-- SIDEBAR USERPIC -->
                 <div class="profile-userpic">
-                    <img
-                        src="https://lh3.googleusercontent.com/-bSNE-_iWMao/AAAAAAAAAAI/AAAAAAAAAlQ/k_TPiq1-9qU/s60-p-no/photo.jpg"
-                        class="img-responsive" alt="">
+                    <img src="<?php echo base_url('resources/images/user_default.png') ?>" class="img-responsive" alt="">
+                    <span class="name" style="color: blue;">Change Photo</span>
                 </div>
                 <!-- END SIDEBAR USERPIC -->
                 <!-- SIDEBAR USER TITLE -->
@@ -74,22 +73,22 @@
                         <li class="active">
                             <a href="#">
                                 <i class="glyphicon glyphicon-home"></i>
-                                Overview </a>
+                                My profile </a>
                         </li>
                         <li>
                             <a href="#">
                                 <i class="glyphicon glyphicon-user"></i>
-                                Account Settings </a>
+                                Edit profile </a>
                         </li>
                         <li>
                             <a href="#" target="_blank">
                                 <i class="glyphicon glyphicon-ok"></i>
-                                Tasks </a>
+                                Change password </a>
                         </li>
                         <li>
                             <a href="#">
                                 <i class="glyphicon glyphicon-flag"></i>
-                                Help </a>
+                                Delete my account </a>
                         </li>
                     </ul>
                 </div>
@@ -116,6 +115,10 @@
                         <label for="exampleInput">Occupation</label>
                         <input type="text" class="form-control adbd-input" id="" placeholder="Occupation">
                     </div>
+                    <div class="form-group">
+                        <label for="exampleInput">A little bit about yourself</label>
+                        <textarea class="form-control adbd-input" rows="5"></textarea>
+                    </div>
 
 
                     <h4 class="adbd-uppercase" style="margin-top: 50px;">Address
@@ -124,25 +127,28 @@
                         </small>
                     </h4>
                     <div class="form-group">
-                        <label for="">District</label>
-                        <select class="form-control adbd-input">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
+                        <div style="display: inline-block;width:calc(50% - 2px);">
+                            <label for="">District</label>
+                            <select class="form-control adbd-input">
+                                <option>Dhaka</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select> 
+                        </div>
+                        <div style="display: inline-block;width:calc(50% - 2px)">
+                            <label for="">Thana</label>
+                            <select class="form-control adbd-input">
+                                <option>hello </option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="">Thana</label>
-                        <select class="form-control adbd-input">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
+                    
                     <div class="form-group">
                         <label for="exampleInput">Street / Village </label>
                         <input type="text" class="form-control adbd-input" id="" placeholder="Street / Village">
@@ -156,29 +162,33 @@
                         <input type="checkbox" class="adbd-checkbox" id="seller"><span class="ck-span"></span> Seller
                     </label>
 
-                    <div id="seller_info" style="display: none">
+                    <div id="seller_info" style="display: none;margin-top: 10px;">
                         <div class="form-group">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-5">
                                     <label for="">Delevery start time</label>
                                     <select class="form-control adbd-input">
                                         <option>--</option>
-                                        <option>Home</option>
-                                        <option>Spacific location</option>
+                                        <option>1 AM</option>
+                                        <option>2 AM</option>
+                                        <option>3 AM</option>
+                                        <option>4 AM</option>
                                     </select>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-5">
                                     <label for="">Delevery end time</label>
                                     <select class="form-control adbd-input">
                                         <option>--</option>
-                                        <option>Home</option>
-                                        <option>Spacific location</option>
+                                        <option>1 AM</option>
+                                        <option>2 AM</option>
+                                        <option>3 AM</option>
+                                        <option>4 AM</option>
                                     </select>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-2">
                                     <div class="form-group">
-                                        <label for="exampleInput"> </label>
-                                        <p class="btn bg-info btn-block" type="submit">add more</p>
+                                        <label for="exampleInput">&nbsp;</label>
+                                        <p class="btn bg-info btn-block" type="submit">+</p>
                                     </div>
                                 </div>
                             </div>
@@ -193,25 +203,16 @@
                         </div>
                         <div class="form-group">
                             <div class="row">
-                                <div class="col-md-8">
+                                <div class="col-md-10">
                                     <label for="exampleInput">Location name</label>
                                     <input type="text" class="form-control adbd-input" id=""
                                            placeholder="Spacific location">
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-2">
                                     <div class="form-group">
-                                        <label for="exampleInput"> </label>
-                                        <p class="btn bg-info btn-block" type="submit">add more</p>
+                                        <label for="exampleInput">&nbsp;</label>
+                                        <p class="btn bg-info btn-block" type="submit">+</p>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <label for="exampleInput">Location name</label>
-                                    <input type="text" class="form-control adbd-input" id=""
-                                           placeholder="Spacific location">
                                 </div>
                             </div>
                         </div>
@@ -223,7 +224,7 @@
 //                            $("#seller").click(function () {
 //                                $("div#seller_info").show(100);
 //                            });
-                            $('#seller').click(function() {
+                            $('#seller').click(function () {
                                 $("#seller_info").toggle(this.checked);
                             });
 
